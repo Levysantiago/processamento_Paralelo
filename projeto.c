@@ -11,7 +11,6 @@ double* somaMatrizxLinha(double *A, int msize, int nsize);
 
 int main( int argc, char** argv )
 {
-    printf("aq\n");
   int vSize, mSize, nSize;
   double *x;
   double *A;
@@ -20,12 +19,12 @@ int main( int argc, char** argv )
   int i, j;
 
   if(argc > 1)
-		vSize = atoi(argv[1]);
-	else
+    vSize = atoi(argv[1]);
+  else
     vSize = VSIZE;
 
   if(argc > 2)
-  	mSize = atoi(argv[2]);
+    mSize = atoi(argv[2]);
   else
     mSize = MSIZE;
 
