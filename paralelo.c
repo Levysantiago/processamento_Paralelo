@@ -6,7 +6,7 @@
 #define NSIZE 512
 
 //Projeto5: Retorna a soma dos elementos de cada linha de uma matriz
-double* somaMatrizxLinha(double *A, int msize, int nsize);
+double* somaMatrizxLinhaParalelo(double *A, int msize, int nsize);
 
 int main( int argc, char** argv )
 {
@@ -48,7 +48,7 @@ int main( int argc, char** argv )
 	}
 
 	//Realizando o cálculo
-	result = somaMatrizxLinha(A, mSize, nSize);
+	result = somaMatrizxLinhaParalelo(A, mSize, nSize);
 
 	//Imprimindo o resultado
 	printf("Resultado: | ");
@@ -62,9 +62,8 @@ int main( int argc, char** argv )
 	return 0;
 }
 
-double* somaMatrizxLinha(double *A, int mSize, int nSize){
-    int i, j, jStart;
-    double soma;
+double* somaMatrizxLinhaParalelo(double *A, int mSize, int nSize){
+    int i, j, nSizeLessOne = nSize - 1, tam = mSize*nSize;
     double *result;
 
     //Alocando o vetor resultado
@@ -75,14 +74,28 @@ double* somaMatrizxLinha(double *A, int mSize, int nSize){
     }
 
     //Percorrendo a matriz em forma de vetor
-    for(i = 0; i < mSize; i++){
-    	soma = 0.0;
-    	jStart = nSize*i;
-		for(j = jStart; j < jStart+nSize; j++){
-			soma += A[j];
-		}
-		result[i] = soma;
-	}
+    #pragma omp parallel num_threads(4)
+    {
+    	//Criando uma variável soma para cada thread
+    	double soma = 0.0;
+    	//Criando um contador de linha para cada thread
+    	int count = 0;
+		#pragma omp for schedule(dynamic, nSize)
+		for(i = 0; i < tam; i++){
+			//Somando os valores de uma linha
+			soma += A[i];
+			//Incrementando contador
+			count++;
+			//Se chegar no fim da linha
+			if(count > nSizeLessOne){
+				//Inserindo as somas de acordo com os índices adequados
+				result[i/nSize] = soma;
+				//Reiniciando soma e count
+				count = 0;
+				soma = 0.0;
+			}
+		}	
+    }
 
     return result;
 }
