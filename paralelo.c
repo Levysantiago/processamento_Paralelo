@@ -65,6 +65,10 @@ int main( int argc, char** argv )
 double* somaMatrizxLinhaParalelo(double *A, int mSize, int nSize){
     int i, j, nSizeLessOne = nSize - 1, tam = mSize*nSize;
     double *result;
+    //Criando uma variável soma para cada thread
+	double soma = 0.0;
+	//Criando um contador de linha para cada thread
+	int count = 0;
 
     //Alocando o vetor resultado
     result = (double *) malloc(mSize * sizeof(double));
@@ -77,9 +81,10 @@ double* somaMatrizxLinhaParalelo(double *A, int mSize, int nSize){
     #pragma omp parallel num_threads(4)
     {
     	//Criando uma variável soma para cada thread
-    	double soma = 0.0;
-    	//Criando um contador de linha para cada thread
-    	int count = 0;
+		double soma = 0.0;
+		//Criando um contador de linha para cada thread
+		int count = 0;
+
 		#pragma omp for schedule(dynamic, nSize)
 		for(i = 0; i < tam; i++){
 			//Somando os valores de uma linha
