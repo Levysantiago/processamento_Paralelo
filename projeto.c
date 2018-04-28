@@ -1,6 +1,13 @@
+/** 
+*
+* Projeto 5: Retorna a soma dos elementos de cada linha de uma matriz
+*
+**/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
+#include <math.h>
 
 //Definições
 #define MSIZE 256
@@ -8,12 +15,10 @@
 #define N_THREADS 4
 #define QTD_REPETICOES_POR_FUNCAO 3
 
-/** 
-*
-* Projeto 5: Retorna a soma dos elementos de cada linha de uma matriz
-*
+/**
+*	Um ponteiro para função que recebe um ponteiro a double (matriz) e dois inteiros (linha e
+* coluna da matriz.
 **/
-
 typedef double* (*funcPointer)(double *A, int msize, int nsize);
 
 /**
@@ -29,8 +34,14 @@ void freeSeguro(double **);
 **/
 double functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, int repeticao);
 
+/**
+*	Essa é a função que calcula a soma dos elementos de cada linha de uma matriz paralelamente.
+**/
 double* somaMatrizxLinhaParalelo(double *A, int msize, int nsize);
 
+/**
+*	Essa é a função que calcula a soma dos elementos de cada linha de uma matriz sequencialmente.
+**/
 double* somaMatrizxLinhaSequencial(double *A, int msize, int nsize);
 
 int main( int argc, char** argv )
@@ -56,7 +67,7 @@ int main( int argc, char** argv )
 		nSize = NSIZE;
 	}
 
-	// (1024)^3 = 1073741824
+	//Para chegar em Gigabytes: (1024)^3 = 1073741824
 	printf("\n Memória para a matriz:   %f Gigas\n\n", (double) (sizeof(double)*nSize*mSize)/(1073741824));
 
 	//Alocando a matriz como forma de um vetor
@@ -87,10 +98,10 @@ int main( int argc, char** argv )
 	//Calculando a eficiência
 	eficiencia = speedup / N_THREADS;
 
-	printf(" Tempo Sequencial: \t  %f\n", tempoSequencial);
-	printf(" Tempo Paralelo: \t  %f\n\n", tempoParalelo);
-	printf(" Speedup: \t\t  %f\n", speedup);
-	printf(" Eficiencia: \t\t  %f\n\n", eficiencia);
+	printf(" Tempo Sequencial (Ts):   %f seg\n", tempoSequencial);
+	printf(" Tempo Paralelo (Tp): \t  %f seg\n\n", tempoParalelo);
+	printf(" Speedup (Sup): \t  %f Ts/Tp\n", speedup);
+	printf(" Eficiencia: \t\t  %f Sup/nThreads\n\n", eficiencia);
 
 	//Imprimindo o resultado
 	/*printf("Resultado: | ");
@@ -99,6 +110,7 @@ int main( int argc, char** argv )
 	}
 	printf("\n");*/
 
+	//Liberando a memória alocada pelos vetores
 	freeSeguro(&A);
 	freeSeguro(&result);
 	return 0;
@@ -178,6 +190,7 @@ double* somaMatrizxLinhaParalelo(double *A, int mSize, int nSize){
 		//Criando um contador de linha para cada thread
 		int count = 0;
 
+		//Cada thread pega um bloco de tamanho nSize dinamicamente
 		#pragma omp for schedule(dynamic, nSize)
 		for(i = 0; i < tam; i++){
 			//Somando os valores de uma linha
