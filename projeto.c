@@ -7,18 +7,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
+#include <math.h>
 
 //Definições
 #define MSIZE 256
 #define NSIZE 512
 #define N_THREADS 4
-#define QTD_REPETICOES_POR_FUNCAO 3
+#define QTD_REPETICOES_POR_FUNCAO 10
 
 /**
 *	Um ponteiro para função que recebe um ponteiro a double (matriz) e dois inteiros (linha e
 * coluna da matriz.
 **/
 typedef double* (*funcPointer)(double *A, int msize, int nsize);
+
+typedef struct medidas{
+	double tempo;
+	double desvioPadrao;
+}t_medidas;
 
 /**
 *	Uma função para liberar a memória que foi alocada para os ponteiros. Além de dar um free,
@@ -35,7 +41,7 @@ double compResults(double *vet1, double *vet2, int tam);
 * que essa função recebida será executada. O functionTime executa a função 'n' vezes, calcula
 * o tempo de cada repetição e retorna a média de todos os resultados.
 **/
-double functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, double **result, int repeticao);
+t_medidas functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, double **result, int repeticao);
 
 /**
 *	Essa é a função que calcula a soma dos elementos de cada linha de uma matriz paralelamente.
@@ -52,7 +58,8 @@ int main( int argc, char** argv )
 	int mSize, nSize, mxn, i, j;
 	double *A = NULL, *resultParalel = NULL, *resultSeq = NULL;
 	double speedup, eficiencia, diferencaMax;
-	double tempoParalelo, tempoSequencial, tempoTotal;
+	double tempoTotal;
+	t_medidas medidasParalelo, medidasSequencial;
 
 	tempoTotal = omp_get_wtime();
 
@@ -94,10 +101,10 @@ int main( int argc, char** argv )
 	}
 
 	//Calculando o tempo sequencial
-	tempoSequencial = functionTime(&somaMatrizxLinhaSequencial, A, mSize, nSize, &resultSeq, QTD_REPETICOES_POR_FUNCAO);
+	medidasSequencial = functionTime(&somaMatrizxLinhaSequencial, A, mSize, nSize, &resultSeq, QTD_REPETICOES_POR_FUNCAO);
 
 	//Calculando o tempo paralelo
-	tempoParalelo = functionTime(&somaMatrizxLinhaParalelo, A, mSize, nSize, &resultParalel, QTD_REPETICOES_POR_FUNCAO);
+	medidasParalelo = functionTime(&somaMatrizxLinhaParalelo, A, mSize, nSize, &resultParalel, QTD_REPETICOES_POR_FUNCAO);
 
 	//Comparando os vetores resultantes
 	diferencaMax = compResults(resultSeq, resultParalel, mSize);
@@ -107,13 +114,15 @@ int main( int argc, char** argv )
 	freeSeguro(&resultParalel);
 
 	//Calculando o speedup
-	speedup = tempoSequencial / tempoParalelo;
+	speedup = medidasSequencial.tempo / medidasParalelo.tempo;
 
 	//Calculando a eficiência
 	eficiencia = speedup / N_THREADS;
 
-	printf(" Tempo Sequencial (Ts):     %f seg\n", tempoSequencial);
-	printf(" Tempo Paralelo (Tp): \t    %f seg\n", tempoParalelo);
+	printf(" Tempo Sequencial (Ts):     %f seg\n", medidasSequencial.tempo);
+	printf(" Tempo Paralelo (Tp): \t    %f seg\n", medidasParalelo.tempo);
+	printf(" Desvio Padrão Sequencial:  %f\n", medidasSequencial.desvioPadrao);
+	printf(" Desvio Padrão Paralelo:    %f\n\n", medidasParalelo.desvioPadrao);
 	printf(" Diferenca de valor máxima: %f\n\n", diferencaMax);
 	printf(" Speedup (Sup): \t    %f Ts/Tp\n", speedup);
 	printf(" Eficiencia: \t\t    %.2f%%\n\n", eficiencia*100);
@@ -157,26 +166,42 @@ double compResults(double *vet1, double *vet2, int tam){
 	return max;
 }
 
-double functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, double **result, int repeticao){
-	double start, end, media = 0.0;
+t_medidas functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, double **result, int repeticao){
+	double media = 0.0, tempo, variancia = 0.0, desvio, tempos[repeticao];
 	int i;
+	t_medidas medidas;
 
 	// Realizando chamadas à função 'repeticao' vezes e calculando a média desses tempos obtidos
 	for(i = 0;i < repeticao; i++){
-		start = omp_get_wtime();
+		tempo = omp_get_wtime();
 		*result = somaMatrizxLinha(A, mSize, nSize);
-		end = omp_get_wtime();
+		tempo = omp_get_wtime() - tempo;
 
 		if(i < repeticao-1){
 			freeSeguro(result);
 		}
 
-		media += end - start;
-	}
+		media += tempo;
 
+		tempos[i] = tempo;
+	}
 	media /= repeticao;
 
-	return media;
+	for(i=0;i < repeticao;i++){
+		//Calculando os desvios
+		desvio = tempos[i] - media;
+		//Calculando a variância com o quadrado dos desvios
+		variancia += desvio*desvio;
+	}
+	//Finalizando o cálculo da variância
+	variancia /= (repeticao-1);
+
+	//Calculando o desvio padrão
+	medidas.desvioPadrao = sqrt(variancia);
+	//Setando a média dos tempos
+	medidas.tempo = media;
+
+	return medidas;
 }
 
 double* somaMatrizxLinhaSequencial(double *A, int mSize, int nSize){
