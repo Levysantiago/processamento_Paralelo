@@ -96,27 +96,13 @@ int main( int argc, char** argv )
 	//Calculando o tempo sequencial
 	tempoSequencial = functionTime(&somaMatrizxLinhaSequencial, A, mSize, nSize, &resultSeq, QTD_REPETICOES_POR_FUNCAO);
 
-	//Comparar os vetores
-
-	/*printf("Resultado: | ");
-	for(i = 0;i < mSize; i++){
-		printf("%f | ", resultSeq[i]);
-	}
-	printf("\n\n");*/
-
 	//Calculando o tempo paralelo
 	tempoParalelo = functionTime(&somaMatrizxLinhaParalelo, A, mSize, nSize, &resultParalel, QTD_REPETICOES_POR_FUNCAO);
 
-	//Comparar os vetores
-
-	/*printf("Resultado: | ");
-	for(i = 0;i < mSize; i++){
-		printf("%f | ", resultParalel[i]);
-	}
-	printf("\n\n");*/
-
+	//Comparando os vetores resultantes
 	diferencaMax = compResults(resultSeq, resultParalel, mSize);
 
+	//Desalocando os vetores
 	freeSeguro(&resultSeq);
 	freeSeguro(&resultParalel);
 
