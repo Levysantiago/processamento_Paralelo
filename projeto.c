@@ -1,6 +1,9 @@
 /** 
 *
 * Projeto 5: Retorna a soma dos elementos de cada linha de uma matriz
+* Feito por: Levy Santiago e Adson Cardoso
+*
+* Compilando: $ gcc projeto.c -o projeto -fopenmp -lm
 *
 **/
 
@@ -9,10 +12,16 @@
 #include <omp.h>
 #include <math.h>
 
-//Definições
+//Quantidade padrão de linhas da matriz
 #define MSIZE 256
+
+//Quantidade padrão de colunas da matriz
 #define NSIZE 512
+
+//Quantidade de threads a serem usadas no código em paralelo
 #define N_THREADS 4
+
+//Quantidade de repetições para a chamada das funções em sequencial e paralelo 
 #define QTD_REPETICOES_POR_FUNCAO 10
 
 /**
@@ -21,6 +30,10 @@
 **/
 typedef double* (*funcPointer)(double *A, int msize, int nsize);
 
+/*
+*	Um struct para armazenar os dois tipos de medidas a serem realizadas
+*
+*/
 typedef struct medidas{
 	double tempo;
 	double desvioPadrao;
@@ -30,18 +43,29 @@ typedef struct medidas{
 *	Uma função para liberar a memória que foi alocada para os ponteiros. Além de dar um free,
 * ela seta o ponteiro como NULL para que futuramente o ponteiro não seja utilizado novamente.
 **/
-void freeSeguro(double **);
+void freeSeguro(void **);
 
+/*
+* Uma função para retornar o valor absoluto de um double.
+*
+*/
 double absDouble(double x);
 
+/*
+*	Uma função que compara os valores de dois vetores de mesmo tamanho calculando as diferenças
+* absolutas em cada posição dos vetores, e retorna a máxima diferença resultante.
+*
+*/
 double compResults(double *vet1, double *vet2, int tam);
 
 /**
-*	Essa função recebe uma outra função como parâmetro, seus parâmetros e quantidade de vezes
-* que essa função recebida será executada. O functionTime executa a função 'n' vezes, calcula
-* o tempo de cada repetição e retorna a média de todos os resultados.
+*	Essa função recebe uma outra função como parâmetro, uma matriz, a linha e coluna dessa matriz
+* o vetor de resultado como ponteiro para ponteiro, e a quantidade de vezes que essa função recebida 
+* como parâmetro será executada. O functionTime executa a função 'n' vezes, calcula o tempo de cada 
+* repetição, retorna a média de todos os resultados e o desvio padrão a partir de um ponteiro do 
+* tipo t_medidas.
 **/
-t_medidas functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, double **result, int repeticao);
+t_medidas * functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, double **result, int repeticao);
 
 /**
 *	Essa é a função que calcula a soma dos elementos de cada linha de uma matriz paralelamente.
@@ -59,7 +83,7 @@ int main( int argc, char** argv )
 	double *A = NULL, *resultParalel = NULL, *resultSeq = NULL;
 	double speedup, eficiencia, diferencaMax;
 	double tempoTotal;
-	t_medidas medidasParalelo, medidasSequencial;
+	t_medidas *medidasParalelo, *medidasSequencial;
 
 	tempoTotal = omp_get_wtime();
 
@@ -87,7 +111,7 @@ int main( int argc, char** argv )
 	//Alocando a matriz como forma de um vetor
 	A = (double *) malloc(mSize * nSize * sizeof(double));
 	if(A == NULL){
-		printf("Erro na alocacao.");
+		printf("\nErro na alocacao.\n");
         exit(-1);
 	}
 	
@@ -100,42 +124,48 @@ int main( int argc, char** argv )
 		A[i] = ((double)random() / RAND_MAX)*2.0 - 1.0;
 	}
 
-	//Calculando o tempo sequencial
+	//Calculando o tempo e desvio padrão sequencial
 	medidasSequencial = functionTime(&somaMatrizxLinhaSequencial, A, mSize, nSize, &resultSeq, QTD_REPETICOES_POR_FUNCAO);
 
-	//Calculando o tempo paralelo
+	//Calculando o tempo e desvio padrão paralelo
 	medidasParalelo = functionTime(&somaMatrizxLinhaParalelo, A, mSize, nSize, &resultParalel, QTD_REPETICOES_POR_FUNCAO);
 
 	//Comparando os vetores resultantes
 	diferencaMax = compResults(resultSeq, resultParalel, mSize);
 
 	//Desalocando os vetores
-	freeSeguro(&resultSeq);
-	freeSeguro(&resultParalel);
+	freeSeguro((void*) &resultSeq);
+	freeSeguro((void*) &resultParalel);
 
 	//Calculando o speedup
-	speedup = medidasSequencial.tempo / medidasParalelo.tempo;
+	speedup = medidasSequencial->tempo / medidasParalelo->tempo;
 
 	//Calculando a eficiência
 	eficiencia = speedup / N_THREADS;
 
-	printf(" Tempo Sequencial (Ts):     %f seg\n", medidasSequencial.tempo);
-	printf(" Tempo Paralelo (Tp): \t    %f seg\n", medidasParalelo.tempo);
-	printf(" Desvio Padrão Sequencial:  %f\n", medidasSequencial.desvioPadrao);
-	printf(" Desvio Padrão Paralelo:    %f\n\n", medidasParalelo.desvioPadrao);
+	printf(" Tempo Sequencial (Ts):     %f seg\n", medidasSequencial->tempo);
+	printf(" Tempo Paralelo (Tp): \t    %f seg\n", medidasParalelo->tempo);
+	printf(" Desvio Padrão Sequencial:  %f\n", medidasSequencial->desvioPadrao);
+	printf(" Desvio Padrão Paralelo:    %f\n\n", medidasParalelo->desvioPadrao);
 	printf(" Diferenca de valor máxima: %f\n\n", diferencaMax);
-	printf(" Speedup (Sup): \t    %f Ts/Tp\n", speedup);
+	printf(" Speedup: \t\t    %f Ts/Tp\n", speedup);
 	printf(" Eficiencia: \t\t    %.2f%%\n\n", eficiencia*100);
 
+	//Desalocando os espaços de memória das medidas
+	freeSeguro((void*) &medidasParalelo);
+	freeSeguro((void*) &medidasSequencial);
+
+	//Liberando a memória alocada pelos vetores
+	freeSeguro((void*) &A);
+
+	//Obtendo tempo final do programa
 	tempoTotal = omp_get_wtime() - tempoTotal;
 	printf("\n Tempo total: \t\t    %f seg\n\n", tempoTotal);
 
-	//Liberando a memória alocada pelos vetores
-	freeSeguro(&A);
 	return 0;
 }
 
-void freeSeguro(double **pointer){
+void freeSeguro(void **pointer){
 	if(*pointer != NULL){
 		free(*pointer);
 	}
@@ -157,6 +187,7 @@ double compResults(double *vet1, double *vet2, int tam){
 	max = absDouble(vet1[0] - vet2[0]);
 
 	for(i = 1;i < tam;i++){
+		//Calculando a diferença absoluta entre os valores das mesmas posições dos vetores
 		dif = absDouble(vet1[i] - vet2[i]);
 		if(dif > max){
 			max = dif;
@@ -166,10 +197,17 @@ double compResults(double *vet1, double *vet2, int tam){
 	return max;
 }
 
-t_medidas functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, double **result, int repeticao){
+t_medidas * functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, double **result, int repeticao){
 	double media = 0.0, tempo, variancia = 0.0, desvio, tempos[repeticao];
 	int i;
-	t_medidas medidas;
+	t_medidas *ptr_medidas;
+
+	//Alocando o ponteiro para um tipo de medidas
+	ptr_medidas = (t_medidas *) malloc(sizeof(t_medidas));
+	if(ptr_medidas == NULL){
+		printf("\nErro de alocação\n");
+		exit(-1);
+	}
 
 	// Realizando chamadas à função 'repeticao' vezes e calculando a média desses tempos obtidos
 	for(i = 0;i < repeticao; i++){
@@ -178,7 +216,7 @@ t_medidas functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int n
 		tempo = omp_get_wtime() - tempo;
 
 		if(i < repeticao-1){
-			freeSeguro(result);
+			freeSeguro((void*) result);
 		}
 
 		media += tempo;
@@ -197,11 +235,11 @@ t_medidas functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int n
 	variancia /= (repeticao-1);
 
 	//Calculando o desvio padrão
-	medidas.desvioPadrao = sqrt(variancia);
+	ptr_medidas->desvioPadrao = sqrt(variancia);
 	//Setando a média dos tempos
-	medidas.tempo = media;
+	ptr_medidas->tempo = media;
 
-	return medidas;
+	return ptr_medidas;
 }
 
 double* somaMatrizxLinhaSequencial(double *A, int mSize, int nSize){
@@ -212,7 +250,7 @@ double* somaMatrizxLinhaSequencial(double *A, int mSize, int nSize){
     //Alocando o vetor resultado
     result = (double *) malloc(mSize * sizeof(double));
     if(result == NULL){
-        printf("Erro na alocacao.");
+        printf("\nErro na alocacao.\n");
         exit(-1);
     }
 
@@ -236,7 +274,7 @@ double* somaMatrizxLinhaParalelo(double *A, int mSize, int nSize){
     //Alocando o vetor resultado
     result = (double *) malloc(mSize * sizeof(double));
     if(result == NULL){
-        printf("Erro na alocacao.");
+        printf("\nErro na alocacao.\n");
         exit(-1);
     }
 
@@ -248,15 +286,18 @@ double* somaMatrizxLinhaParalelo(double *A, int mSize, int nSize){
     	//Criando uma variável soma para cada thread
 		double soma = 0.0;
 
-    	//Percorrendo a matriz em forma de vetor
-    	#pragma omp for schedule(static)
+    	//Utilizando o schedule dynamic para realizar os somatórios
+    	#pragma omp for schedule(dynamic)
 	    for(i = 0; i < mSize; i++){
 	    	soma = 0.0;
 
+	    	//Calculando a posição da coluna
 	    	jStart = i*nSize;
 			for(j = jStart; j < jStart+nSize; j++){
+				//Realizando a soma dos elementos da linha
 				soma += A[j];
 			}
+			//Inserindo o resultado da soma no vetor resultado
 			result[i] = soma;
 		}
     }
