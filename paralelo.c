@@ -63,12 +63,8 @@ int main( int argc, char** argv )
 }
 
 double* somaMatrizxLinhaParalelo(double *A, int mSize, int nSize){
-    int i, j, nSizeLessOne = nSize - 1, tam = mSize*nSize;
+    int i;
     double *result;
-    //Criando uma variável soma para cada thread
-	double soma = 0.0;
-	//Criando um contador de linha para cada thread
-	int count = 0;
 
     //Alocando o vetor resultado
     result = (double *) malloc(mSize * sizeof(double));
@@ -78,28 +74,24 @@ double* somaMatrizxLinhaParalelo(double *A, int mSize, int nSize){
     }
 
     //Percorrendo a matriz em forma de vetor
-    #pragma omp parallel num_threads(4)
+    #pragma omp parallel num_threads(N_THREADS)
     {
+    	int j, jStart;
+    	
     	//Criando uma variável soma para cada thread
 		double soma = 0.0;
-		//Criando um contador de linha para cada thread
-		int count = 0;
 
-		#pragma omp for schedule(dynamic, nSize)
-		for(i = 0; i < tam; i++){
-			//Somando os valores de uma linha
-			soma += A[i];
-			//Incrementando contador
-			count++;
-			//Se chegar no fim da linha
-			if(count > nSizeLessOne){
-				//Inserindo as somas de acordo com os índices adequados
-				result[i/nSize] = soma;
-				//Reiniciando soma e count
-				count = 0;
-				soma = 0.0;
+    	//Percorrendo a matriz em forma de vetor
+    	#pragma omp for schedule(static)
+	    for(i = 0; i < mSize; i++){
+	    	soma = 0.0;
+
+	    	jStart = i*nSize;
+			for(j = jStart; j < jStart+nSize; j++){
+				soma += A[j];
 			}
-		}	
+			result[i] = soma;
+		}
     }
 
     return result;

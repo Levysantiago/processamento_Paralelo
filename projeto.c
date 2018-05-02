@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
-#include <math.h>
 
 //Definições
 #define MSIZE 256
@@ -27,12 +26,16 @@ typedef double* (*funcPointer)(double *A, int msize, int nsize);
 **/
 void freeSeguro(double **);
 
+double absDouble(double x);
+
+double compResults(double *vet1, double *vet2, int tam);
+
 /**
 *	Essa função recebe uma outra função como parâmetro, seus parâmetros e quantidade de vezes
 * que essa função recebida será executada. O functionTime executa a função 'n' vezes, calcula
 * o tempo de cada repetição e retorna a média de todos os resultados.
 **/
-double functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, int repeticao);
+double functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, double **result, int repeticao);
 
 /**
 *	Essa é a função que calcula a soma dos elementos de cada linha de uma matriz paralelamente.
@@ -47,9 +50,11 @@ double* somaMatrizxLinhaSequencial(double *A, int msize, int nsize);
 int main( int argc, char** argv )
 {
 	int mSize, nSize, mxn, i, j;
-	double *A = NULL, *result = NULL;
-	double speedup, eficiencia;
-	double tempoParalelo, tempoSequencial;
+	double *A = NULL, *resultParalel = NULL, *resultSeq = NULL;
+	double speedup, eficiencia, diferencaMax;
+	double tempoParalelo, tempoSequencial, tempoTotal;
+
+	tempoTotal = omp_get_wtime();
 
 	//Definindo a quantidade de linhas
 	if(argc > 1){
@@ -60,7 +65,9 @@ int main( int argc, char** argv )
 	}
 
 	//Definindo a quantidade de colunas
-	if(argc > 2){
+	if(argc == 2){
+		nSize = mSize;	
+	}else if(argc > 2){
 		nSize = atoi(argv[2]);
 	}
 	else{
@@ -68,7 +75,7 @@ int main( int argc, char** argv )
 	}
 
 	//Para chegar em Gigabytes: (1024)^3 = 1073741824
-	printf("\n Memória para a matriz:   %f Gigas\n\n", (double) (sizeof(double)*nSize*mSize)/(1073741824));
+	printf("\n Memória para a matriz:     %f Gigas\n\n", (double) (sizeof(double)*nSize*mSize)/(1073741824));
 
 	//Alocando a matriz como forma de um vetor
 	A = (double *) malloc(mSize * nSize * sizeof(double));
@@ -87,10 +94,31 @@ int main( int argc, char** argv )
 	}
 
 	//Calculando o tempo sequencial
-	tempoSequencial = functionTime(&somaMatrizxLinhaSequencial, A, mSize, nSize, QTD_REPETICOES_POR_FUNCAO);
+	tempoSequencial = functionTime(&somaMatrizxLinhaSequencial, A, mSize, nSize, &resultSeq, QTD_REPETICOES_POR_FUNCAO);
+
+	//Comparar os vetores
+
+	/*printf("Resultado: | ");
+	for(i = 0;i < mSize; i++){
+		printf("%f | ", resultSeq[i]);
+	}
+	printf("\n\n");*/
 
 	//Calculando o tempo paralelo
-	tempoParalelo = functionTime(&somaMatrizxLinhaParalelo, A, mSize, nSize, QTD_REPETICOES_POR_FUNCAO);
+	tempoParalelo = functionTime(&somaMatrizxLinhaParalelo, A, mSize, nSize, &resultParalel, QTD_REPETICOES_POR_FUNCAO);
+
+	//Comparar os vetores
+
+	/*printf("Resultado: | ");
+	for(i = 0;i < mSize; i++){
+		printf("%f | ", resultParalel[i]);
+	}
+	printf("\n\n");*/
+
+	diferencaMax = compResults(resultSeq, resultParalel, mSize);
+
+	freeSeguro(&resultSeq);
+	freeSeguro(&resultParalel);
 
 	//Calculando o speedup
 	speedup = tempoSequencial / tempoParalelo;
@@ -98,21 +126,17 @@ int main( int argc, char** argv )
 	//Calculando a eficiência
 	eficiencia = speedup / N_THREADS;
 
-	printf(" Tempo Sequencial (Ts):   %f seg\n", tempoSequencial);
-	printf(" Tempo Paralelo (Tp): \t  %f seg\n\n", tempoParalelo);
-	printf(" Speedup (Sup): \t  %f Ts/Tp\n", speedup);
-	printf(" Eficiencia: \t\t  %f Sup/nThreads\n\n", eficiencia);
+	printf(" Tempo Sequencial (Ts):     %f seg\n", tempoSequencial);
+	printf(" Tempo Paralelo (Tp): \t    %f seg\n", tempoParalelo);
+	printf(" Diferenca de valor máxima: %f\n\n", diferencaMax);
+	printf(" Speedup (Sup): \t    %f Ts/Tp\n", speedup);
+	printf(" Eficiencia: \t\t    %.2f%%\n\n", eficiencia*100);
 
-	//Imprimindo o resultado
-	/*printf("Resultado: | ");
-	for(i = 0;i < mSize; i++){
-		printf("%f | ", result[i]);
-	}
-	printf("\n");*/
+	tempoTotal = omp_get_wtime() - tempoTotal;
+	printf("\n Tempo total: \t\t    %f seg\n\n", tempoTotal);
 
 	//Liberando a memória alocada pelos vetores
 	freeSeguro(&A);
-	freeSeguro(&result);
 	return 0;
 }
 
@@ -123,17 +147,44 @@ void freeSeguro(double **pointer){
 	*pointer = NULL;
 }
 
-double functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, int repeticao){
-	double start, end, media = 0.0, *result;
+double absDouble(double x){
+	if(x < 0){
+		x = x * -1.0;
+	}
+
+	return x;
+}
+
+double compResults(double *vet1, double *vet2, int tam){
+	int i;
+	double max, dif;
+
+	max = absDouble(vet1[0] - vet2[0]);
+
+	for(i = 1;i < tam;i++){
+		dif = absDouble(vet1[i] - vet2[i]);
+		if(dif > max){
+			max = dif;
+		}
+	}
+
+	return max;
+}
+
+double functionTime(funcPointer somaMatrizxLinha, double *A, int mSize, int nSize, double **result, int repeticao){
+	double start, end, media = 0.0;
 	int i;
 
 	// Realizando chamadas à função 'repeticao' vezes e calculando a média desses tempos obtidos
 	for(i = 0;i < repeticao; i++){
 		start = omp_get_wtime();
-		result = somaMatrizxLinha(A, mSize, nSize);
+		*result = somaMatrizxLinha(A, mSize, nSize);
 		end = omp_get_wtime();
 
-		freeSeguro(&result);
+		if(i < repeticao-1){
+			freeSeguro(result);
+		}
+
 		media += end - start;
 	}
 
@@ -168,12 +219,8 @@ double* somaMatrizxLinhaSequencial(double *A, int mSize, int nSize){
 }
 
 double* somaMatrizxLinhaParalelo(double *A, int mSize, int nSize){
-    int i, j, nSizeLessOne = nSize - 1, tam = mSize*nSize;
+    int i;
     double *result;
-    //Criando uma variável soma para cada thread
-	double soma = 0.0;
-	//Criando um contador de linha para cada thread
-	int count = 0;
 
     //Alocando o vetor resultado
     result = (double *) malloc(mSize * sizeof(double));
@@ -185,27 +232,22 @@ double* somaMatrizxLinhaParalelo(double *A, int mSize, int nSize){
     //Percorrendo a matriz em forma de vetor
     #pragma omp parallel num_threads(N_THREADS)
     {
+    	int j, jStart;
+    	
     	//Criando uma variável soma para cada thread
 		double soma = 0.0;
-		//Criando um contador de linha para cada thread
-		int count = 0;
 
-		//Cada thread pega um bloco de tamanho nSize dinamicamente
-		#pragma omp for schedule(dynamic, nSize)
-		for(i = 0; i < tam; i++){
-			//Somando os valores de uma linha
-			soma += A[i];
-			//Incrementando contador
-			count++;
-			//Se chegar no fim da linha
-			if(count > nSizeLessOne){
-				//Inserindo as somas de acordo com os índices adequados
-				result[i/nSize] = soma;
-				//Reiniciando soma e count
-				count = 0;
-				soma = 0.0;
+    	//Percorrendo a matriz em forma de vetor
+    	#pragma omp for schedule(static)
+	    for(i = 0; i < mSize; i++){
+	    	soma = 0.0;
+
+	    	jStart = i*nSize;
+			for(j = jStart; j < jStart+nSize; j++){
+				soma += A[j];
 			}
-		}	
+			result[i] = soma;
+		}
     }
 
     return result;
