@@ -106,7 +106,7 @@ int main( int argc, char** argv )
 	}
 
 	//Para chegar em Gigabytes: (1024)^3 = 1073741824
-	printf("\n Memória para a matriz:     %f Gigas\n\n", (double) (sizeof(double)*nSize*mSize)/(1073741824));
+	printf("\n Memória para a matriz:     *%f* Gigas\n\n", (double) (sizeof(double)*nSize*mSize)/(1073741824));
 
 	//Alocando a matriz como forma de um vetor
 	A = (double *) malloc(mSize * nSize * sizeof(double));
@@ -143,13 +143,14 @@ int main( int argc, char** argv )
 	//Calculando a eficiência
 	eficiencia = speedup / N_THREADS;
 
-	printf(" Tempo Sequencial (Ts):     %f seg\n", medidasSequencial->tempo);
-	printf(" Tempo Paralelo (Tp): \t    %f seg\n", medidasParalelo->tempo);
-	printf(" Desvio Padrão Sequencial:  %f\n", medidasSequencial->desvioPadrao);
-	printf(" Desvio Padrão Paralelo:    %f\n\n", medidasParalelo->desvioPadrao);
-	printf(" Diferenca de valor máxima: %f\n\n", diferencaMax);
-	printf(" Speedup: \t\t    %f Ts/Tp\n", speedup);
-	printf(" Eficiencia: \t\t    %.2f%%\n\n", eficiencia*100);
+	printf(" Ordem da matriz:           *%dx%d*\n", mSize, nSize);
+	printf(" Tempo Sequencial (Ts):     *%f* seg\n", medidasSequencial->tempo);
+	printf(" Tempo Paralelo (Tp): \t    *%f* seg\n", medidasParalelo->tempo);
+	printf(" Desvio Padrão Sequencial:  *%f*\n", medidasSequencial->desvioPadrao);
+	printf(" Desvio Padrão Paralelo:    *%f*\n\n", medidasParalelo->desvioPadrao);
+	printf(" Diferenca de valor máxima: *%f*\n\n", diferencaMax);
+	printf(" Speedup: \t\t    *%f* Ts/Tp\n", speedup);
+	printf(" Eficiencia: \t\t    *%.2f*%%\n\n", eficiencia*100);
 
 	//Desalocando os espaços de memória das medidas
 	freeSeguro((void*) &medidasParalelo);
@@ -160,7 +161,8 @@ int main( int argc, char** argv )
 
 	//Obtendo tempo final do programa
 	tempoTotal = omp_get_wtime() - tempoTotal;
-	printf("\n Tempo total: \t\t    %f seg\n\n", tempoTotal);
+	printf("\n Tempo total: \t\t    *%f* seg\n", tempoTotal);
+	printf("\n ***\n");
 
 	return 0;
 }
