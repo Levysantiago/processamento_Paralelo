@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from matplotlib import gridspec
 
 def main():
 	ordemMatriz = []
@@ -9,11 +10,17 @@ def main():
 	speedup = []
 	eficiencia = []
 
+	cont = 1
+	ticks = [0]
+
 	file = open("teste.txt", "r")
 	# \n
 	a = file.readline()
 	while(a != ''):
 		if(a != '\n'):
+			ticks.append(cont)
+			cont += 1
+
 			#Memória da matriz
 			file.readline()
 
@@ -72,13 +79,17 @@ def main():
 
 	file.close()
 
+	gs = gridspec.GridSpec(2, 1, height_ratios=[10, 1]) 
+	plt.subplot(gs[0])
+	#plt.subplot2grid((2, 1), (0, 0))
 	plt.title("Tempo Sequencial X Tempo Paralelo")
 	plt.grid(True)
 	plt.ylabel("Tempo (seg)")
 	plt.xlabel("Ordem da Matriz")
-	plt.xticks([0,1,2,3],ordemMatriz)
-	plt.plot(tempoSequencial)
-	plt.plot(tempoParalelo)
+	plt.xticks(ticks, ordemMatriz, fontsize=8, rotation=90)
+	linha_sequencial, = plt.plot(tempoSequencial, label="Sequencial")
+	linha_paralelo, = plt.plot(tempoParalelo, label="Paralelo")
+	plt.legend(handles=[linha_sequencial, linha_paralelo])
 	plt.show()
 
 main()
