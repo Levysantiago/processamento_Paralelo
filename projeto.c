@@ -22,7 +22,7 @@
 #define N_THREADS 4
 
 //Quantidade de repetições para a chamada das funções em sequencial e paralelo 
-#define QTD_REPETICOES_POR_FUNCAO 10
+#define QTD_REPETICOES_POR_FUNCAO 50
 
 /**
 *	Um ponteiro para função que recebe um ponteiro a double (matriz) e dois inteiros (linha e
