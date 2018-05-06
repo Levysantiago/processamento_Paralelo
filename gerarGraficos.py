@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 from matplotlib import gridspec
 
 def main():
@@ -13,7 +14,7 @@ def main():
 	cont = 1
 	ticks = [0]
 
-	file = open("teste.txt", "r")
+	file = open("resultadoFinal.out", "r")
 	# \n
 	a = file.readline()
 	while(a != ''):
@@ -26,7 +27,10 @@ def main():
 
 			#Ordem da matriz
 			a = file.readline()
-			ordemMatriz.append( a.split('*')[1] )
+			if(cont % 2 == 0):
+				ordemMatriz.append( a.split('*')[1] )
+			else:
+				ordemMatriz.append( '' )
 
 			#Obtendo tempo sequencial
 			a = file.readline()
@@ -69,6 +73,7 @@ def main():
 
 		a = file.readline()
 
+	'''
 	print(ordemMatriz)
 	print(tempoSequencial)
 	print(tempoParalelo)
@@ -76,12 +81,13 @@ def main():
 	print(desvioPadraoParalelo)
 	print(speedup)
 	print(eficiencia)
+	'''
 
 	file.close()
 
+	#GRÁFICO DE TEMPO SEQUENCIAL X TEMPO PARALELO
 	gs = gridspec.GridSpec(2, 1, height_ratios=[10, 1]) 
 	plt.subplot(gs[0])
-	#plt.subplot2grid((2, 1), (0, 0))
 	plt.title("Tempo Sequencial X Tempo Paralelo")
 	plt.grid(True)
 	plt.ylabel("Tempo (seg)")
@@ -90,6 +96,43 @@ def main():
 	linha_sequencial, = plt.plot(tempoSequencial, label="Sequencial")
 	linha_paralelo, = plt.plot(tempoParalelo, label="Paralelo")
 	plt.legend(handles=[linha_sequencial, linha_paralelo])
+	plt.savefig("graficos/tempo.png")
+	plt.show()
+
+	#GRÁFICO DE DESVIO PADRÃO SEQUENCIAL X DESVIO PADRÃO PARALELO
+	gs = gridspec.GridSpec(2, 1, height_ratios=[10, 1]) 
+	plt.subplot(gs[0])
+	plt.title("Desvio Padrão Sequencial X Desvio Padrão Paralelo")
+	plt.grid(True)
+	plt.ylabel("Desvio Padrão")
+	plt.xlabel("Ordem da Matriz")
+	plt.xticks(ticks, ordemMatriz, fontsize=8, rotation=90)
+	linha_sequencial, = plt.plot(desvioPadraoSequencial, label="Sequencial")
+	linha_paralelo, = plt.plot(desvioPadraoParalelo, label="Paralelo")
+	plt.legend(handles=[linha_sequencial, linha_paralelo])
+	plt.savefig("graficos/desvioPadrao.png")
+	plt.show()
+
+	#GRÁFICO DE SPEEDUP
+	gs = gridspec.GridSpec(2, 1) 
+	plt.subplot(gs[0])
+	plt.title("Gráfico de SpeedUP")
+	plt.grid(True)
+	plt.ylabel("SpeedUP")
+	plt.xlabel("Ordem da Matriz")
+	plt.xticks(ticks, ordemMatriz, fontsize=8, rotation=90)
+	plt.plot(speedup)
+	plt.show()
+
+	#GRÁFICO DE EFICIÊNCIA
+	gs = gridspec.GridSpec(2, 1) 
+	plt.subplot(gs[0])
+	plt.title("Gráfico de Eficiência")
+	plt.grid(True)
+	plt.ylabel("Eficiência")
+	plt.xlabel("Ordem da Matriz")
+	plt.xticks(ticks, ordemMatriz, fontsize=8, rotation=90)
+	plt.plot(eficiencia)
 	plt.show()
 
 main()
