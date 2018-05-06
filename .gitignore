@@ -2,4 +2,4 @@
 !*.c
 !*.py
 !*.png
-!graficos/*
+!graficos
