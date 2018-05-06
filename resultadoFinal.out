@@ -1,0 +1,774 @@
+
+ Memória para a matriz:     *0.007812* Gigas
+
+ Ordem da matriz:           *1024x1024*
+ Tempo Sequencial (Ts):     *0.004032* seg
+ Tempo Paralelo (Tp): 	    *0.001265* seg
+ Desvio Padrão Sequencial:  *0.000022*
+ Desvio Padrão Paralelo:    *0.000053*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *3.186185* Ts/Tp
+ Eficiencia: 		    *79.65*%
+
+
+ Tempo total: 		    *0.283297* seg
+
+ ***
+
+ Memória para a matriz:     *0.031250* Gigas
+
+ Ordem da matriz:           *2048x2048*
+ Tempo Sequencial (Ts):     *0.016196* seg
+ Tempo Paralelo (Tp): 	    *0.006041* seg
+ Desvio Padrão Sequencial:  *0.000024*
+ Desvio Padrão Paralelo:    *0.000040*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.680856* Ts/Tp
+ Eficiencia: 		    *67.02*%
+
+
+ Tempo total: 		    *1.192769* seg
+
+ ***
+
+ Memória para a matriz:     *0.070312* Gigas
+
+ Ordem da matriz:           *3072x3072*
+ Tempo Sequencial (Ts):     *0.036410* seg
+ Tempo Paralelo (Tp): 	    *0.013467* seg
+ Desvio Padrão Sequencial:  *0.000035*
+ Desvio Padrão Paralelo:    *0.000035*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.703651* Ts/Tp
+ Eficiencia: 		    *67.59*%
+
+
+ Tempo total: 		    *2.660683* seg
+
+ ***
+
+ Memória para a matriz:     *0.125000* Gigas
+
+ Ordem da matriz:           *4096x4096*
+ Tempo Sequencial (Ts):     *0.064702* seg
+ Tempo Paralelo (Tp): 	    *0.023781* seg
+ Desvio Padrão Sequencial:  *0.000038*
+ Desvio Padrão Paralelo:    *0.000042*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.720799* Ts/Tp
+ Eficiencia: 		    *68.02*%
+
+
+ Tempo total: 		    *4.720257* seg
+
+ ***
+
+ Memória para a matriz:     *0.195312* Gigas
+
+ Ordem da matriz:           *5120x5120*
+ Tempo Sequencial (Ts):     *0.101117* seg
+ Tempo Paralelo (Tp): 	    *0.037026* seg
+ Desvio Padrão Sequencial:  *0.000075*
+ Desvio Padrão Paralelo:    *0.000046*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.731005* Ts/Tp
+ Eficiencia: 		    *68.28*%
+
+
+ Tempo total: 		    *7.367825* seg
+
+ ***
+
+ Memória para a matriz:     *0.281250* Gigas
+
+ Ordem da matriz:           *6144x6144*
+ Tempo Sequencial (Ts):     *0.145621* seg
+ Tempo Paralelo (Tp): 	    *0.053150* seg
+ Desvio Padrão Sequencial:  *0.000061*
+ Desvio Padrão Paralelo:    *0.000053*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.739812* Ts/Tp
+ Eficiencia: 		    *68.50*%
+
+
+ Tempo total: 		    *10.601084* seg
+
+ ***
+
+ Memória para a matriz:     *0.382812* Gigas
+
+ Ordem da matriz:           *7168x7168*
+ Tempo Sequencial (Ts):     *0.198101* seg
+ Tempo Paralelo (Tp): 	    *0.072160* seg
+ Desvio Padrão Sequencial:  *0.000080*
+ Desvio Padrão Paralelo:    *0.000082*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.745292* Ts/Tp
+ Eficiencia: 		    *68.63*%
+
+
+ Tempo total: 		    *14.413028* seg
+
+ ***
+
+ Memória para a matriz:     *0.500000* Gigas
+
+ Ordem da matriz:           *8192x8192*
+ Tempo Sequencial (Ts):     *0.258569* seg
+ Tempo Paralelo (Tp): 	    *0.094232* seg
+ Desvio Padrão Sequencial:  *0.000081*
+ Desvio Padrão Paralelo:    *0.000075*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.743975* Ts/Tp
+ Eficiencia: 		    *68.60*%
+
+
+ Tempo total: 		    *18.816659* seg
+
+ ***
+
+ Memória para a matriz:     *0.632812* Gigas
+
+ Ordem da matriz:           *9216x9216*
+ Tempo Sequencial (Ts):     *0.327322* seg
+ Tempo Paralelo (Tp): 	    *0.118998* seg
+ Desvio Padrão Sequencial:  *0.000094*
+ Desvio Padrão Paralelo:    *0.000074*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.750654* Ts/Tp
+ Eficiencia: 		    *68.77*%
+
+
+ Tempo total: 		    *23.803493* seg
+
+ ***
+
+ Memória para a matriz:     *0.781250* Gigas
+
+ Ordem da matriz:           *10240x10240*
+ Tempo Sequencial (Ts):     *0.404079* seg
+ Tempo Paralelo (Tp): 	    *0.146748* seg
+ Desvio Padrão Sequencial:  *0.000082*
+ Desvio Padrão Paralelo:    *0.000076*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.753545* Ts/Tp
+ Eficiencia: 		    *68.84*%
+
+
+ Tempo total: 		    *29.379592* seg
+
+ ***
+
+ Memória para a matriz:     *0.945312* Gigas
+
+ Ordem da matriz:           *11264x11264*
+ Tempo Sequencial (Ts):     *0.488901* seg
+ Tempo Paralelo (Tp): 	    *0.177480* seg
+ Desvio Padrão Sequencial:  *0.000086*
+ Desvio Padrão Paralelo:    *0.000163*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.754685* Ts/Tp
+ Eficiencia: 		    *68.87*%
+
+
+ Tempo total: 		    *35.541971* seg
+
+ ***
+
+ Memória para a matriz:     *1.125000* Gigas
+
+ Ordem da matriz:           *12288x12288*
+ Tempo Sequencial (Ts):     *0.581909* seg
+ Tempo Paralelo (Tp): 	    *0.211088* seg
+ Desvio Padrão Sequencial:  *0.000099*
+ Desvio Padrão Paralelo:    *0.000101*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.756711* Ts/Tp
+ Eficiencia: 		    *68.92*%
+
+
+ Tempo total: 		    *42.292985* seg
+
+ ***
+
+ Memória para a matriz:     *1.320312* Gigas
+
+ Ordem da matriz:           *13312x13312*
+ Tempo Sequencial (Ts):     *0.683030* seg
+ Tempo Paralelo (Tp): 	    *0.247544* seg
+ Desvio Padrão Sequencial:  *0.000091*
+ Desvio Padrão Paralelo:    *0.000096*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.759222* Ts/Tp
+ Eficiencia: 		    *68.98*%
+
+
+ Tempo total: 		    *49.627345* seg
+
+ ***
+
+ Memória para a matriz:     *1.531250* Gigas
+
+ Ordem da matriz:           *14336x14336*
+ Tempo Sequencial (Ts):     *0.792177* seg
+ Tempo Paralelo (Tp): 	    *0.286816* seg
+ Desvio Padrão Sequencial:  *0.000094*
+ Desvio Padrão Paralelo:    *0.000097*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.761968* Ts/Tp
+ Eficiencia: 		    *69.05*%
+
+
+ Tempo total: 		    *57.544131* seg
+
+ ***
+
+ Memória para a matriz:     *1.757812* Gigas
+
+ Ordem da matriz:           *15360x15360*
+ Tempo Sequencial (Ts):     *0.909656* seg
+ Tempo Paralelo (Tp): 	    *0.329194* seg
+ Desvio Padrão Sequencial:  *0.000110*
+ Desvio Padrão Paralelo:    *0.000180*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.763285* Ts/Tp
+ Eficiencia: 		    *69.08*%
+
+
+ Tempo total: 		    *66.064767* seg
+
+ ***
+
+ Memória para a matriz:     *2.000000* Gigas
+
+ Ordem da matriz:           *16384x16384*
+ Tempo Sequencial (Ts):     *1.034583* seg
+ Tempo Paralelo (Tp): 	    *0.374416* seg
+ Desvio Padrão Sequencial:  *0.000114*
+ Desvio Padrão Paralelo:    *0.000216*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.763191* Ts/Tp
+ Eficiencia: 		    *69.08*%
+
+
+ Tempo total: 		    *75.138718* seg
+
+ ***
+
+ Memória para a matriz:     *2.257812* Gigas
+
+ Ordem da matriz:           *17408x17408*
+ Tempo Sequencial (Ts):     *1.167120* seg
+ Tempo Paralelo (Tp): 	    *0.422492* seg
+ Desvio Padrão Sequencial:  *0.000148*
+ Desvio Padrão Paralelo:    *0.000138*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.762464* Ts/Tp
+ Eficiencia: 		    *69.06*%
+
+
+ Tempo total: 		    *84.783993* seg
+
+ ***
+
+ Memória para a matriz:     *2.531250* Gigas
+
+ Ordem da matriz:           *18432x18432*
+ Tempo Sequencial (Ts):     *1.309399* seg
+ Tempo Paralelo (Tp): 	    *0.473557* seg
+ Desvio Padrão Sequencial:  *0.000136*
+ Desvio Padrão Paralelo:    *0.000177*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.765029* Ts/Tp
+ Eficiencia: 		    *69.13*%
+
+
+ Tempo total: 		    *95.096850* seg
+
+ ***
+
+ Memória para a matriz:     *2.820312* Gigas
+
+ Ordem da matriz:           *19456x19456*
+ Tempo Sequencial (Ts):     *1.458768* seg
+ Tempo Paralelo (Tp): 	    *0.527509* seg
+ Desvio Padrão Sequencial:  *0.000141*
+ Desvio Padrão Paralelo:    *0.000169*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.765391* Ts/Tp
+ Eficiencia: 		    *69.13*%
+
+
+ Tempo total: 		    *105.934942* seg
+
+ ***
+
+ Memória para a matriz:     *3.125000* Gigas
+
+ Ordem da matriz:           *20480x20480*
+ Tempo Sequencial (Ts):     *1.616429* seg
+ Tempo Paralelo (Tp): 	    *0.584022* seg
+ Desvio Padrão Sequencial:  *0.000150*
+ Desvio Padrão Paralelo:    *0.000156*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.767756* Ts/Tp
+ Eficiencia: 		    *69.19*%
+
+
+ Tempo total: 		    *117.358500* seg
+
+ ***
+
+ Memória para a matriz:     *3.445312* Gigas
+
+ Ordem da matriz:           *21504x21504*
+ Tempo Sequencial (Ts):     *1.782272* seg
+ Tempo Paralelo (Tp): 	    *0.643969* seg
+ Desvio Padrão Sequencial:  *0.000192*
+ Desvio Padrão Paralelo:    *0.000338*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.767636* Ts/Tp
+ Eficiencia: 		    *69.19*%
+
+
+ Tempo total: 		    *129.391430* seg
+
+ ***
+
+ Memória para a matriz:     *3.781250* Gigas
+
+ Ordem da matriz:           *22528x22528*
+ Tempo Sequencial (Ts):     *1.955449* seg
+ Tempo Paralelo (Tp): 	    *0.706589* seg
+ Desvio Padrão Sequencial:  *0.000136*
+ Desvio Padrão Paralelo:    *0.000156*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.767450* Ts/Tp
+ Eficiencia: 		    *69.19*%
+
+
+ Tempo total: 		    *142.004107* seg
+
+ ***
+
+ Memória para a matriz:     *4.132812* Gigas
+
+ Ordem da matriz:           *23552x23552*
+ Tempo Sequencial (Ts):     *2.137637* seg
+ Tempo Paralelo (Tp): 	    *0.772062* seg
+ Desvio Padrão Sequencial:  *0.000174*
+ Desvio Padrão Paralelo:    *0.000250*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.768739* Ts/Tp
+ Eficiencia: 		    *69.22*%
+
+
+ Tempo total: 		    *155.187033* seg
+
+ ***
+
+ Memória para a matriz:     *4.500000* Gigas
+
+ Ordem da matriz:           *24576x24576*
+ Tempo Sequencial (Ts):     *2.327485* seg
+ Tempo Paralelo (Tp): 	    *0.840744* seg
+ Desvio Padrão Sequencial:  *0.000156*
+ Desvio Padrão Paralelo:    *0.000242*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.768363* Ts/Tp
+ Eficiencia: 		    *69.21*%
+
+
+ Tempo total: 		    *170.269211* seg
+
+ ***
+
+ Memória para a matriz:     *4.882812* Gigas
+
+ Ordem da matriz:           *25600x25600*
+ Tempo Sequencial (Ts):     *2.525738* seg
+ Tempo Paralelo (Tp): 	    *0.912146* seg
+ Desvio Padrão Sequencial:  *0.000158*
+ Desvio Padrão Paralelo:    *0.000220*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.769005* Ts/Tp
+ Eficiencia: 		    *69.23*%
+
+
+ Tempo total: 		    *183.986973* seg
+
+ ***
+
+ Memória para a matriz:     *5.281250* Gigas
+
+ Ordem da matriz:           *26624x26624*
+ Tempo Sequencial (Ts):     *2.731807* seg
+ Tempo Paralelo (Tp): 	    *0.986038* seg
+ Desvio Padrão Sequencial:  *0.000178*
+ Desvio Padrão Paralelo:    *0.000207*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.770488* Ts/Tp
+ Eficiencia: 		    *69.26*%
+
+
+ Tempo total: 		    *198.297327* seg
+
+ ***
+
+ Memória para a matriz:     *5.695312* Gigas
+
+ Ordem da matriz:           *27648x27648*
+ Tempo Sequencial (Ts):     *2.944895* seg
+ Tempo Paralelo (Tp): 	    *1.063405* seg
+ Desvio Padrão Sequencial:  *0.000206*
+ Desvio Padrão Paralelo:    *0.000187*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.769307* Ts/Tp
+ Eficiencia: 		    *69.23*%
+
+
+ Tempo total: 		    *214.086718* seg
+
+ ***
+
+ Memória para a matriz:     *6.125000* Gigas
+
+ Ordem da matriz:           *28672x28672*
+ Tempo Sequencial (Ts):     *3.168073* seg
+ Tempo Paralelo (Tp): 	    *1.143640* seg
+ Desvio Padrão Sequencial:  *0.000206*
+ Desvio Padrão Paralelo:    *0.000178*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.770167* Ts/Tp
+ Eficiencia: 		    *69.25*%
+
+
+ Tempo total: 		    *229.963098* seg
+
+ ***
+
+ Memória para a matriz:     *6.570312* Gigas
+
+ Ordem da matriz:           *29696x29696*
+ Tempo Sequencial (Ts):     *3.397104* seg
+ Tempo Paralelo (Tp): 	    *1.226203* seg
+ Desvio Padrão Sequencial:  *0.000206*
+ Desvio Padrão Paralelo:    *0.000220*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.770425* Ts/Tp
+ Eficiencia: 		    *69.26*%
+
+
+ Tempo total: 		    *246.597000* seg
+
+ ***
+
+ Memória para a matriz:     *7.031250* Gigas
+
+ Ordem da matriz:           *30720x30720*
+ Tempo Sequencial (Ts):     *3.635924* seg
+ Tempo Paralelo (Tp): 	    *1.312011* seg
+ Desvio Padrão Sequencial:  *0.000255*
+ Desvio Padrão Paralelo:    *0.000372*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.771260* Ts/Tp
+ Eficiencia: 		    *69.28*%
+
+
+ Tempo total: 		    *263.903576* seg
+
+ ***
+
+ Memória para a matriz:     *7.507812* Gigas
+
+ Ordem da matriz:           *31744x31744*
+ Tempo Sequencial (Ts):     *3.883487* seg
+ Tempo Paralelo (Tp): 	    *1.401329* seg
+ Desvio Padrão Sequencial:  *0.000267*
+ Desvio Padrão Paralelo:    *0.000265*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.771289* Ts/Tp
+ Eficiencia: 		    *69.28*%
+
+
+ Tempo total: 		    *281.856444* seg
+
+ ***
+
+ Memória para a matriz:     *8.000000* Gigas
+
+ Ordem da matriz:           *32768x32768*
+ Tempo Sequencial (Ts):     *4.137225* seg
+ Tempo Paralelo (Tp): 	    *1.492316* seg
+ Desvio Padrão Sequencial:  *0.000258*
+ Desvio Padrão Paralelo:    *0.000260*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.772353* Ts/Tp
+ Eficiencia: 		    *69.31*%
+
+
+ Tempo total: 		    *302.647299* seg
+
+ ***
+
+ Memória para a matriz:     *8.507812* Gigas
+
+ Ordem da matriz:           *33792x33792*
+ Tempo Sequencial (Ts):     *4.400034* seg
+ Tempo Paralelo (Tp): 	    *2.083320* seg
+ Desvio Padrão Sequencial:  *0.000302*
+ Desvio Padrão Paralelo:    *0.000479*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.112030* Ts/Tp
+ Eficiencia: 		    *52.80*%
+
+
+ Tempo total: 		    *345.177738* seg
+
+ ***
+
+ Memória para a matriz:     *9.031250* Gigas
+
+ Ordem da matriz:           *34816x34816*
+ Tempo Sequencial (Ts):     *4.669647* seg
+ Tempo Paralelo (Tp): 	    *1.684937* seg
+ Desvio Padrão Sequencial:  *0.000312*
+ Desvio Padrão Paralelo:    *0.000240*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.771407* Ts/Tp
+ Eficiencia: 		    *69.29*%
+
+
+ Tempo total: 		    *338.914876* seg
+
+ ***
+
+ Memória para a matriz:     *9.570312* Gigas
+
+ Ordem da matriz:           *35840x35840*
+ Tempo Sequencial (Ts):     *4.950168* seg
+ Tempo Paralelo (Tp): 	    *1.785387* seg
+ Desvio Padrão Sequencial:  *0.000339*
+ Desvio Padrão Paralelo:    *0.000350*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.772602* Ts/Tp
+ Eficiencia: 		    *69.32*%
+
+
+ Tempo total: 		    *359.272405* seg
+
+ ***
+
+ Memória para a matriz:     *10.125000* Gigas
+
+ Ordem da matriz:           *36864x36864*
+ Tempo Sequencial (Ts):     *5.238547* seg
+ Tempo Paralelo (Tp): 	    *1.888839* seg
+ Desvio Padrão Sequencial:  *0.000373*
+ Desvio Padrão Paralelo:    *0.000305*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.773422* Ts/Tp
+ Eficiencia: 		    *69.34*%
+
+
+ Tempo total: 		    *380.113192* seg
+
+ ***
+
+ Memória para a matriz:     *10.695312* Gigas
+
+ Ordem da matriz:           *37888x37888*
+ Tempo Sequencial (Ts):     *5.531024* seg
+ Tempo Paralelo (Tp): 	    *1.994449* seg
+ Desvio Padrão Sequencial:  *0.000340*
+ Desvio Padrão Paralelo:    *0.000322*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.773209* Ts/Tp
+ Eficiencia: 		    *69.33*%
+
+
+ Tempo total: 		    *401.975978* seg
+
+ ***
+
+ Memória para a matriz:     *11.281250* Gigas
+
+ Ordem da matriz:           *38912x38912*
+ Tempo Sequencial (Ts):     *5.835333* seg
+ Tempo Paralelo (Tp): 	    *2.103829* seg
+ Desvio Padrão Sequencial:  *0.000362*
+ Desvio Padrão Paralelo:    *0.000329*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.773673* Ts/Tp
+ Eficiencia: 		    *69.34*%
+
+
+ Tempo total: 		    *424.104760* seg
+
+ ***
+
+ Memória para a matriz:     *11.882812* Gigas
+
+ Ordem da matriz:           *39936x39936*
+ Tempo Sequencial (Ts):     *6.146394* seg
+ Tempo Paralelo (Tp): 	    *2.215919* seg
+ Desvio Padrão Sequencial:  *0.000337*
+ Desvio Padrão Paralelo:    *0.000371*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.773745* Ts/Tp
+ Eficiencia: 		    *69.34*%
+
+
+ Tempo total: 		    *446.001444* seg
+
+ ***
+
+ Memória para a matriz:     *12.500000* Gigas
+
+ Ordem da matriz:           *40960x40960*
+ Tempo Sequencial (Ts):     *6.470097* seg
+ Tempo Paralelo (Tp): 	    *2.331528* seg
+ Desvio Padrão Sequencial:  *0.000406*
+ Desvio Padrão Paralelo:    *0.000457*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.775046* Ts/Tp
+ Eficiencia: 		    *69.38*%
+
+
+ Tempo total: 		    *469.443116* seg
+
+ ***
+
+ Memória para a matriz:     *13.132812* Gigas
+
+ Ordem da matriz:           *41984x41984*
+ Tempo Sequencial (Ts):     *6.792705* seg
+ Tempo Paralelo (Tp): 	    *2.448176* seg
+ Desvio Padrão Sequencial:  *0.000407*
+ Desvio Padrão Paralelo:    *0.000373*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.774598* Ts/Tp
+ Eficiencia: 		    *69.36*%
+
+
+ Tempo total: 		    *492.922088* seg
+
+ ***
+
+ Memória para a matriz:     *13.781250* Gigas
+
+ Ordem da matriz:           *43008x43008*
+ Tempo Sequencial (Ts):     *7.126074* seg
+ Tempo Paralelo (Tp): 	    *2.569434* seg
+ Desvio Padrão Sequencial:  *0.000486*
+ Desvio Padrão Paralelo:    *0.000337*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.773403* Ts/Tp
+ Eficiencia: 		    *69.34*%
+
+
+ Tempo total: 		    *517.121060* seg
+
+ ***
+
+ Memória para a matriz:     *14.445312* Gigas
+
+ Ordem da matriz:           *44032x44032*
+ Tempo Sequencial (Ts):     *7.470534* seg
+ Tempo Paralelo (Tp): 	    *2.693127* seg
+ Desvio Padrão Sequencial:  *0.000338*
+ Desvio Padrão Paralelo:    *0.000425*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *2.773925* Ts/Tp
+ Eficiencia: 		    *69.35*%
+
+
+ Tempo total: 		    *542.105093* seg
+
+ ***
