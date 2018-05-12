@@ -106,7 +106,7 @@ def main():
 	#GRÁFICO DE TEMPO SEQUENCIAL X TEMPO PARALELO
 	gs = gridspec.GridSpec(2, 1, height_ratios=[10, 1]) 
 	plt.subplot(gs[0])
-	plt.title("Tempo Sequencial X Tempo Paralelo")
+	plt.title("Tempo Sequencial X Tempo Paralelo (4 Threads)")
 	plt.grid(True)
 	plt.ylabel("Tempo (seg)")
 	plt.xlabel("Ordem da Matriz")
@@ -121,7 +121,7 @@ def main():
 	#GRÁFICO DE DESVIO PADRÃO SEQUENCIAL X DESVIO PADRÃO PARALELO
 	gs = gridspec.GridSpec(2, 1, height_ratios=[10, 1]) 
 	plt.subplot(gs[0])
-	plt.title("Desvio Padrão Sequencial X Desvio Padrão Paralelo")
+	plt.title("Desvio Padrão Sequencial X Desvio Padrão Paralelo (4 Threads)")
 	plt.grid(True)
 	plt.ylabel("Desvio Padrão")
 	plt.xlabel("Ordem da Matriz")
@@ -155,7 +155,7 @@ def main():
 	plt.subplot(gs[0])
 	plt.title("Gráfico de SpeedUP")
 	plt.grid(True)
-	plt.ylabel("Eficiência")
+	plt.ylabel("Eficiência (%)")
 	plt.xlabel("Ordem da Matriz")
 	plt.xticks(ticks, ordemMatriz, fontsize=8, rotation=90)
 	
