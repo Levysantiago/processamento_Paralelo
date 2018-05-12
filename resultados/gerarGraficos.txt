@@ -17,7 +17,7 @@ def main():
 	file = open("resultadoFinal.out", "r")
 	# \n
 	a = file.readline()
-	while(a != ''):
+	while(a != '*----------*\n'):
 		if(a != '\n'):
 			ticks.append(cont)
 			cont += 1
@@ -96,7 +96,7 @@ def main():
 	linha_sequencial, = plt.plot(tempoSequencial, label="Sequencial")
 	linha_paralelo, = plt.plot(tempoParalelo, label="Paralelo")
 	plt.legend(handles=[linha_sequencial, linha_paralelo])
-	plt.savefig("graficos/tempo.png")
+	#plt.savefig("graficos/tempo.png")
 	plt.show()
 
 	#GRÁFICO DE DESVIO PADRÃO SEQUENCIAL X DESVIO PADRÃO PARALELO
@@ -110,7 +110,7 @@ def main():
 	linha_sequencial, = plt.plot(desvioPadraoSequencial, label="Sequencial")
 	linha_paralelo, = plt.plot(desvioPadraoParalelo, label="Paralelo")
 	plt.legend(handles=[linha_sequencial, linha_paralelo])
-	plt.savefig("graficos/desvioPadrao.png")
+	#plt.savefig("graficos/desvioPadrao.png")
 	plt.show()
 
 	#GRÁFICO DE SPEEDUP
