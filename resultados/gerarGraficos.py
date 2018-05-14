@@ -153,7 +153,7 @@ def main():
 	#GRÁFICO DE EFICIÊNCIA COMPARANDO 2, 4 E 8 THREADS
 	gs = gridspec.GridSpec(2, 1, height_ratios=[10, 1]) 
 	plt.subplot(gs[0])
-	plt.title("Gráfico de SpeedUP")
+	plt.title("Gráfico de Eficiência")
 	plt.grid(True)
 	plt.ylabel("Eficiência (%)")
 	plt.xlabel("Ordem da Matriz")
