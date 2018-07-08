@@ -1,0 +1,1998 @@
+2 PROCESSOS
+
+ Memória para a matriz:     *0.007812* Gigas
+
+ 0.007382 
+ Ordem da matriz:           *1024x1024*
+ Tempo Sequencial (Ts):     *0.004065* seg
+ Tempo MPI (Tp): 	    *0.011151* seg
+ Desvio Padrão Sequencial:  *0.000027*
+ Desvio Padrão MPI:         *0.000074*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.364558* Ts/Tp
+ Eficiencia: 		    *18.23*%
+
+
+ Memória para a matriz:     *0.031250* Gigas
+
+ 0.028899 
+ Ordem da matriz:           *2048x2048*
+ Tempo Sequencial (Ts):     *0.016236* seg
+ Tempo MPI (Tp): 	    *0.045557* seg
+ Desvio Padrão Sequencial:  *0.000044*
+ Desvio Padrão MPI:         *0.000056*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.356384* Ts/Tp
+ Eficiencia: 		    *17.82*%
+
+
+ Memória para a matriz:     *0.070312* Gigas
+
+ 0.064979 
+ Ordem da matriz:           *3072x3072*
+ Tempo Sequencial (Ts):     *0.036489* seg
+ Tempo MPI (Tp): 	    *0.102225* seg
+ Desvio Padrão Sequencial:  *0.000096*
+ Desvio Padrão MPI:         *0.000089*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.356951* Ts/Tp
+ Eficiencia: 		    *17.85*%
+
+
+ Memória para a matriz:     *0.125000* Gigas
+
+ 0.114623 
+ Ordem da matriz:           *4096x4096*
+ Tempo Sequencial (Ts):     *0.064711* seg
+ Tempo MPI (Tp): 	    *0.181528* seg
+ Desvio Padrão Sequencial:  *0.000068*
+ Desvio Padrão MPI:         *0.000079*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.356482* Ts/Tp
+ Eficiencia: 		    *17.82*%
+
+
+ Memória para a matriz:     *0.195312* Gigas
+
+ 0.185187 
+ Ordem da matriz:           *5120x5120*
+ Tempo Sequencial (Ts):     *0.101254* seg
+ Tempo MPI (Tp): 	    *0.287817* seg
+ Desvio Padrão Sequencial:  *0.000113*
+ Desvio Padrão MPI:         *0.000123*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.351799* Ts/Tp
+ Eficiencia: 		    *17.59*%
+
+
+ Memória para a matriz:     *0.281250* Gigas
+
+ 0.257945 
+ Ordem da matriz:           *6144x6144*
+ Tempo Sequencial (Ts):     *0.145777* seg
+ Tempo MPI (Tp): 	    *0.405949* seg
+ Desvio Padrão Sequencial:  *0.000080*
+ Desvio Padrão MPI:         *0.000154*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.359102* Ts/Tp
+ Eficiencia: 		    *17.96*%
+
+
+ Memória para a matriz:     *0.382812* Gigas
+
+ 0.351181 
+ Ordem da matriz:           *7168x7168*
+ Tempo Sequencial (Ts):     *0.198319* seg
+ Tempo MPI (Tp): 	    *0.552761* seg
+ Desvio Padrão Sequencial:  *0.000067*
+ Desvio Padrão MPI:         *0.000159*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.358778* Ts/Tp
+ Eficiencia: 		    *17.94*%
+
+
+ Memória para a matriz:     *0.500000* Gigas
+
+ 0.458918 
+ Ordem da matriz:           *8192x8192*
+ Tempo Sequencial (Ts):     *0.258966* seg
+ Tempo MPI (Tp): 	    *0.721835* seg
+ Desvio Padrão Sequencial:  *0.000089*
+ Desvio Padrão MPI:         *0.000185*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.358761* Ts/Tp
+ Eficiencia: 		    *17.94*%
+
+
+ Memória para a matriz:     *0.632812* Gigas
+
+ 0.580716 
+ Ordem da matriz:           *9216x9216*
+ Tempo Sequencial (Ts):     *0.327743* seg
+ Tempo MPI (Tp): 	    *0.912577* seg
+ Desvio Padrão Sequencial:  *0.000109*
+ Desvio Padrão MPI:         *0.000187*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.359140* Ts/Tp
+ Eficiencia: 		    *17.96*%
+
+
+ Memória para a matriz:     *0.781250* Gigas
+
+ 0.718450 
+ Ordem da matriz:           *10240x10240*
+ Tempo Sequencial (Ts):     *0.404787* seg
+ Tempo MPI (Tp): 	    *1.127846* seg
+ Desvio Padrão Sequencial:  *0.000105*
+ Desvio Padrão MPI:         *0.000263*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.358903* Ts/Tp
+ Eficiencia: 		    *17.95*%
+
+
+ Memória para a matriz:     *0.945312* Gigas
+
+ 0.868310 
+ Ordem da matriz:           *11264x11264*
+ Tempo Sequencial (Ts):     *0.489656* seg
+ Tempo MPI (Tp): 	    *1.364066* seg
+ Desvio Padrão Sequencial:  *0.000081*
+ Desvio Padrão MPI:         *0.000239*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.358968* Ts/Tp
+ Eficiencia: 		    *17.95*%
+
+
+ Memória para a matriz:     *1.125000* Gigas
+
+ 1.033107 
+ Ordem da matriz:           *12288x12288*
+ Tempo Sequencial (Ts):     *0.582904* seg
+ Tempo MPI (Tp): 	    *1.621484* seg
+ Desvio Padrão Sequencial:  *0.000168*
+ Desvio Padrão MPI:         *0.000216*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.359488* Ts/Tp
+ Eficiencia: 		    *17.97*%
+
+
+ Memória para a matriz:     *1.320312* Gigas
+
+ 1.210813 
+ Ordem da matriz:           *13312x13312*
+ Tempo Sequencial (Ts):     *0.683829* seg
+ Tempo MPI (Tp): 	    *1.901700* seg
+ Desvio Padrão Sequencial:  *0.000125*
+ Desvio Padrão MPI:         *0.000313*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.359588* Ts/Tp
+ Eficiencia: 		    *17.98*%
+
+
+ Memória para a matriz:     *1.531250* Gigas
+
+ 1.403362 
+ Ordem da matriz:           *14336x14336*
+ Tempo Sequencial (Ts):     *0.792938* seg
+ Tempo MPI (Tp): 	    *2.204393* seg
+ Desvio Padrão Sequencial:  *0.000194*
+ Desvio Padrão MPI:         *0.000326*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.359708* Ts/Tp
+ Eficiencia: 		    *17.99*%
+
+
+ Memória para a matriz:     *1.757812* Gigas
+
+ 1.613444 
+ Ordem da matriz:           *15360x15360*
+ Tempo Sequencial (Ts):     *0.910612* seg
+ Tempo MPI (Tp): 	    *2.541741* seg
+ Desvio Padrão Sequencial:  *0.000161*
+ Desvio Padrão MPI:         *0.000429*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.358263* Ts/Tp
+ Eficiencia: 		    *17.91*%
+
+
+ Memória para a matriz:     *2.000000* Gigas
+
+ 1.832780 
+ Ordem da matriz:           *16384x16384*
+ Tempo Sequencial (Ts):     *1.034807* seg
+ Tempo MPI (Tp): 	    *2.895023* seg
+ Desvio Padrão Sequencial:  *0.000144*
+ Desvio Padrão MPI:         *0.000354*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.357443* Ts/Tp
+ Eficiencia: 		    *17.87*%
+
+
+ Memória para a matriz:     *2.257812* Gigas
+
+ 2.073810 
+ Ordem da matriz:           *17408x17408*
+ Tempo Sequencial (Ts):     *1.168642* seg
+ Tempo MPI (Tp): 	    *3.249536* seg
+ Desvio Padrão Sequencial:  *0.000466*
+ Desvio Padrão MPI:         *0.000334*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.359634* Ts/Tp
+ Eficiencia: 		    *17.98*%
+
+
+ Memória para a matriz:     *2.531250* Gigas
+
+ 2.322106 
+ Ordem da matriz:           *18432x18432*
+ Tempo Sequencial (Ts):     *1.312741* seg
+ Tempo MPI (Tp): 	    *3.641313* seg
+ Desvio Padrão Sequencial:  *0.000337*
+ Desvio Padrão MPI:         *0.000244*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.360513* Ts/Tp
+ Eficiencia: 		    *18.03*%
+
+
+ Memória para a matriz:     *2.820312* Gigas
+
+ 2.599057 
+ Ordem da matriz:           *19456x19456*
+ Tempo Sequencial (Ts):     *1.463793* seg
+ Tempo MPI (Tp): 	    *4.069941* seg
+ Desvio Padrão Sequencial:  *0.000250*
+ Desvio Padrão MPI:         *0.000448*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.359660* Ts/Tp
+ Eficiencia: 		    *17.98*%
+
+
+ Memória para a matriz:     *3.125000* Gigas
+
+ 2.950791 
+ Ordem da matriz:           *20480x20480*
+ Tempo Sequencial (Ts):     *1.618116* seg
+ Tempo MPI (Tp): 	    *4.579614* seg
+ Desvio Padrão Sequencial:  *0.000226*
+ Desvio Padrão MPI:         *0.000440*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.353330* Ts/Tp
+ Eficiencia: 		    *17.67*%
+
+
+ Memória para a matriz:     *3.445312* Gigas
+
+ 3.168259 
+ Ordem da matriz:           *21504x21504*
+ Tempo Sequencial (Ts):     *1.784215* seg
+ Tempo MPI (Tp): 	    *4.961843* seg
+ Desvio Padrão Sequencial:  *0.000284*
+ Desvio Padrão MPI:         *0.000400*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.359587* Ts/Tp
+ Eficiencia: 		    *17.98*%
+
+
+ Memória para a matriz:     *3.781250* Gigas
+
+ 3.476344 
+ Ordem da matriz:           *22528x22528*
+ Tempo Sequencial (Ts):     *1.960178* seg
+ Tempo MPI (Tp): 	    *5.449223* seg
+ Desvio Padrão Sequencial:  *0.000406*
+ Desvio Padrão MPI:         *0.000532*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.359717* Ts/Tp
+ Eficiencia: 		    *17.99*%
+
+[nova119:04946] Read 2147479552, expected 2218786816, errno = 0
+
+ Memória para a matriz:     *4.132812* Gigas
+
+ 5.596413 
+ Ordem da matriz:           *23552x23552*
+ Tempo Sequencial (Ts):     *2.137719* seg
+ Tempo MPI (Tp): 	    *7.771538* seg
+ Desvio Padrão Sequencial:  *0.000253*
+ Desvio Padrão MPI:         *0.000459*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.275070* Ts/Tp
+ Eficiencia: 		    *13.75*%
+
+[nova119:04976] Read 2147479552, expected 2415919104, errno = 0
+
+ Memória para a matriz:     *4.500000* Gigas
+
+ 5.920814 
+ Ordem da matriz:           *24576x24576*
+ Tempo Sequencial (Ts):     *2.330453* seg
+ Tempo MPI (Tp): 	    *8.312043* seg
+ Desvio Padrão Sequencial:  *0.000372*
+ Desvio Padrão MPI:         *0.000657*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.280371* Ts/Tp
+ Eficiencia: 		    *14.02*%
+
+[nova119:05006] Read 2147479552, expected 2621440000, errno = 0
+
+ Memória para a matriz:     *4.882812* Gigas
+
+ 6.267881 
+ Ordem da matriz:           *25600x25600*
+ Tempo Sequencial (Ts):     *2.524653* seg
+ Tempo MPI (Tp): 	    *8.865297* seg
+ Desvio Padrão Sequencial:  *0.000227*
+ Desvio Padrão MPI:         *0.000757*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.284779* Ts/Tp
+ Eficiencia: 		    *14.24*%
+
+[nova119:05036] Read 2147479552, expected 2835349504, errno = 0
+
+ Memória para a matriz:     *5.281250* Gigas
+
+ 6.621114 
+ Ordem da matriz:           *26624x26624*
+ Tempo Sequencial (Ts):     *2.734620* seg
+ Tempo MPI (Tp): 	    *9.375696* seg
+ Desvio Padrão Sequencial:  *0.000480*
+ Desvio Padrão MPI:         *0.001076*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.291671* Ts/Tp
+ Eficiencia: 		    *14.58*%
+
+[nova119:05066] Read 2147479552, expected 3057647616, errno = 0
+
+ Memória para a matriz:     *5.695312* Gigas
+
+ 6.994467 
+ Ordem da matriz:           *27648x27648*
+ Tempo Sequencial (Ts):     *2.949353* seg
+ Tempo MPI (Tp): 	    *9.962816* seg
+ Desvio Padrão Sequencial:  *0.000359*
+ Desvio Padrão MPI:         *0.001207*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.296036* Ts/Tp
+ Eficiencia: 		    *14.80*%
+
+[nova119:05106] Read 2147479552, expected 3288334336, errno = 0
+
+ Memória para a matriz:     *6.125000* Gigas
+
+ 7.392383 
+ Ordem da matriz:           *28672x28672*
+ Tempo Sequencial (Ts):     *3.173132* seg
+ Tempo MPI (Tp): 	    *10.584468* seg
+ Desvio Padrão Sequencial:  *0.000322*
+ Desvio Padrão MPI:         *0.000960*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.299791* Ts/Tp
+ Eficiencia: 		    *14.99*%
+
+[nova119:05136] Read 2147479552, expected 3527409664, errno = 0
+
+ Memória para a matriz:     *6.570312* Gigas
+
+ 7.785720 
+ Ordem da matriz:           *29696x29696*
+ Tempo Sequencial (Ts):     *3.403653* seg
+ Tempo MPI (Tp): 	    *11.222894* seg
+ Desvio Padrão Sequencial:  *0.001024*
+ Desvio Padrão MPI:         *0.000858*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.303278* Ts/Tp
+ Eficiencia: 		    *15.16*%
+
+[nova119:05192] Read 2147479552, expected 3774873600, errno = 0
+
+ Memória para a matriz:     *7.031250* Gigas
+
+ 8.207022 
+ Ordem da matriz:           *30720x30720*
+ Tempo Sequencial (Ts):     *3.640488* seg
+ Tempo MPI (Tp): 	    *11.882529* seg
+ Desvio Padrão Sequencial:  *0.000382*
+ Desvio Padrão MPI:         *0.000703*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.306373* Ts/Tp
+ Eficiencia: 		    *15.32*%
+
+[nova119:05222] Read 2147479552, expected 4030726144, errno = 0
+
+ Memória para a matriz:     *7.507812* Gigas
+
+ 9.199631 
+ Ordem da matriz:           *31744x31744*
+ Tempo Sequencial (Ts):     *3.883895* seg
+ Tempo MPI (Tp): 	    *13.430210* seg
+ Desvio Padrão Sequencial:  *0.000375*
+ Desvio Padrão MPI:         *0.080435*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.289191* Ts/Tp
+ Eficiencia: 		    *14.46*%
+
+[nova119:05264] Read 2147479552, expected 4294967296, errno = 0
+
+ Memória para a matriz:     *8.000000* Gigas
+
+ 26.850584 
+ Ordem da matriz:           *32768x32768*
+ Tempo Sequencial (Ts):     *4.142454* seg
+ Tempo MPI (Tp): 	    *37.010283* seg
+ Desvio Padrão Sequencial:  *0.000515*
+ Desvio Padrão MPI:         *1.213903*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.111927* Ts/Tp
+ Eficiencia: 		    *5.60*%
+
+[nova119:05298] Read 2147479552, expected 4567597056, errno = 0
+
+ Memória para a matriz:     *8.507812* Gigas
+
+ 47.550537 
+ Ordem da matriz:           *33792x33792*
+ Tempo Sequencial (Ts):     *4.398307* seg
+ Tempo MPI (Tp): 	    *53.010472* seg
+ Desvio Padrão Sequencial:  *0.000770*
+ Desvio Padrão MPI:         *1.153847*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.082971* Ts/Tp
+ Eficiencia: 		    *4.15*%
+
+[nova119:05344] Read 2147479552, expected 4848615424, errno = 0
+
+ Memória para a matriz:     *9.031250* Gigas
+
+ 59.351979 
+ Ordem da matriz:           *34816x34816*
+ Tempo Sequencial (Ts):     *4.680203* seg
+ Tempo MPI (Tp): 	    *65.601663* seg
+ Desvio Padrão Sequencial:  *0.001520*
+ Desvio Padrão MPI:         *6.412522*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.071343* Ts/Tp
+ Eficiencia: 		    *3.57*%
+
+[nova119:05385] Read 2147479552, expected 5138022400, errno = 0
+
+ Memória para a matriz:     *9.570312* Gigas
+
+ 78.740396 
+ Ordem da matriz:           *35840x35840*
+ Tempo Sequencial (Ts):     *4.954647* seg
+ Tempo MPI (Tp): 	    *87.431442* seg
+ Desvio Padrão Sequencial:  *0.000693*
+ Desvio Padrão MPI:         *14.031894*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.056669* Ts/Tp
+ Eficiencia: 		    *2.83*%
+
+[nova119:05420] Read 2147479552, expected 5435817984, errno = 0
+
+ Memória para a matriz:     *10.125000* Gigas
+
+ 92.328722 
+ Ordem da matriz:           *36864x36864*
+ Tempo Sequencial (Ts):     *5.236937* seg
+ Tempo MPI (Tp): 	    *101.575655* seg
+ Desvio Padrão Sequencial:  *0.000547*
+ Desvio Padrão MPI:         *16.298821*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.051557* Ts/Tp
+ Eficiencia: 		    *2.58*%
+
+[nova119:05466] Read 2147479552, expected 5742002176, errno = 0
+
+ Memória para a matriz:     *10.695312* Gigas
+
+ 112.498813 
+ Ordem da matriz:           *37888x37888*
+ Tempo Sequencial (Ts):     *5.540676* seg
+ Tempo MPI (Tp): 	    *122.959137* seg
+ Desvio Padrão Sequencial:  *0.005890*
+ Desvio Padrão MPI:         *19.883340*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.045061* Ts/Tp
+ Eficiencia: 		    *2.25*%
+
+[nova119:05509] Read 2147479552, expected 6056574976, errno = 0
+
+ Memória para a matriz:     *11.281250* Gigas
+
+ 127.903908 
+ Ordem da matriz:           *38912x38912*
+ Tempo Sequencial (Ts):     *5.841324* seg
+ Tempo MPI (Tp): 	    *139.717689* seg
+ Desvio Padrão Sequencial:  *0.005456*
+ Desvio Padrão MPI:         *24.077126*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.041808* Ts/Tp
+ Eficiencia: 		    *2.09*%
+
+[nova119:05557] Read 2147479552, expected 6379536384, errno = 0
+
+ Memória para a matriz:     *11.882812* Gigas
+
+ 145.825164 
+ Ordem da matriz:           *39936x39936*
+ Tempo Sequencial (Ts):     *6.156755* seg
+ Tempo MPI (Tp): 	    *161.286446* seg
+ Desvio Padrão Sequencial:  *0.001129*
+ Desvio Padrão MPI:         *38.952011*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.038173* Ts/Tp
+ Eficiencia: 		    *1.91*%
+
+[nova119:05602] Read 2147479552, expected 6710886400, errno = 0
+
+ Memória para a matriz:     *12.500000* Gigas
+
+ 175.360219 
+ Ordem da matriz:           *40960x40960*
+ Tempo Sequencial (Ts):     *6.473510* seg
+ Tempo MPI (Tp): 	    *189.852651* seg
+ Desvio Padrão Sequencial:  *0.006823*
+ Desvio Padrão MPI:         *33.185494*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.034098* Ts/Tp
+ Eficiencia: 		    *1.70*%
+
+[nova119:05652] Read 2147479552, expected 7050625024, errno = 0
+
+ Memória para a matriz:     *13.132812* Gigas
+
+ 243.308947 
+ Ordem da matriz:           *41984x41984*
+ Tempo Sequencial (Ts):     *6.812662* seg
+ Tempo MPI (Tp): 	    *255.681117* seg
+ Desvio Padrão Sequencial:  *0.007192*
+ Desvio Padrão MPI:         *22.679066*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.026645* Ts/Tp
+ Eficiencia: 		    *1.33*%
+
+[nova119:05719] Read 2147479552, expected 7398752256, errno = 0
+
+ Memória para a matriz:     *13.781250* Gigas
+
+ 289.971251 
+ Ordem da matriz:           *43008x43008*
+ Tempo Sequencial (Ts):     *7.141505* seg
+ Tempo MPI (Tp): 	    *314.678071* seg
+ Desvio Padrão Sequencial:  *0.006109*
+ Desvio Padrão MPI:         *75.795652*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.022695* Ts/Tp
+ Eficiencia: 		    *1.13*%
+
+[nova119:05777] Read 2147479552, expected 7755268096, errno = 0
+
+ Memória para a matriz:     *14.445312* Gigas
+
+ 826.184885 
+ Ordem da matriz:           *44032x44032*
+ Tempo Sequencial (Ts):     *7.480138* seg
+ Tempo MPI (Tp): 	    *882.864323* seg
+ Desvio Padrão Sequencial:  *0.001113*
+ Desvio Padrão MPI:         *195.763310*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.008473* Ts/Tp
+ Eficiencia: 		    *0.42*%
+
+--------------------
+4 PROCESSOS
+
+ Memória para a matriz:     *0.007812* Gigas
+
+ 0.017648 
+ Ordem da matriz:           *1024x1024*
+ Tempo Sequencial (Ts):     *0.004067* seg
+ Tempo MPI (Tp): 	    *0.021535* seg
+ Desvio Padrão Sequencial:  *0.000023*
+ Desvio Padrão MPI:         *0.000083*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.188877* Ts/Tp
+ Eficiencia: 		    *4.72*%
+
+
+ Memória para a matriz:     *0.031250* Gigas
+
+ 0.033169 
+ Ordem da matriz:           *2048x2048*
+ Tempo Sequencial (Ts):     *0.016246* seg
+ Tempo MPI (Tp): 	    *0.055485* seg
+ Desvio Padrão Sequencial:  *0.000043*
+ Desvio Padrão MPI:         *0.002240*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.292797* Ts/Tp
+ Eficiencia: 		    *7.32*%
+
+
+ Memória para a matriz:     *0.070312* Gigas
+
+ 0.073427 
+ Ordem da matriz:           *3072x3072*
+ Tempo Sequencial (Ts):     *0.036506* seg
+ Tempo MPI (Tp): 	    *0.123808* seg
+ Desvio Padrão Sequencial:  *0.000048*
+ Desvio Padrão MPI:         *0.004833*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.294860* Ts/Tp
+ Eficiencia: 		    *7.37*%
+
+
+ Memória para a matriz:     *0.125000* Gigas
+
+ 0.129778 
+ Ordem da matriz:           *4096x4096*
+ Tempo Sequencial (Ts):     *0.064870* seg
+ Tempo MPI (Tp): 	    *0.218954* seg
+ Desvio Padrão Sequencial:  *0.000158*
+ Desvio Padrão MPI:         *0.008567*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.296272* Ts/Tp
+ Eficiencia: 		    *7.41*%
+
+
+ Memória para a matriz:     *0.195312* Gigas
+
+ 0.202072 
+ Ordem da matriz:           *5120x5120*
+ Tempo Sequencial (Ts):     *0.101348* seg
+ Tempo MPI (Tp): 	    *0.342287* seg
+ Desvio Padrão Sequencial:  *0.000097*
+ Desvio Padrão MPI:         *0.013357*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.296091* Ts/Tp
+ Eficiencia: 		    *7.40*%
+
+
+ Memória para a matriz:     *0.281250* Gigas
+
+ 0.294119 
+ Ordem da matriz:           *6144x6144*
+ Tempo Sequencial (Ts):     *0.145821* seg
+ Tempo MPI (Tp): 	    *0.494267* seg
+ Desvio Padrão Sequencial:  *0.000080*
+ Desvio Padrão MPI:         *0.019155*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.295024* Ts/Tp
+ Eficiencia: 		    *7.38*%
+
+
+ Memória para a matriz:     *0.382812* Gigas
+
+ 0.394259 
+ Ordem da matriz:           *7168x7168*
+ Tempo Sequencial (Ts):     *0.198461* seg
+ Tempo MPI (Tp): 	    *0.666485* seg
+ Desvio Padrão Sequencial:  *0.000105*
+ Desvio Padrão MPI:         *0.026112*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.297773* Ts/Tp
+ Eficiencia: 		    *7.44*%
+
+
+ Memória para a matriz:     *0.500000* Gigas
+
+ 0.515620 
+ Ordem da matriz:           *8192x8192*
+ Tempo Sequencial (Ts):     *0.259276* seg
+ Tempo MPI (Tp): 	    *0.870839* seg
+ Desvio Padrão Sequencial:  *0.000084*
+ Desvio Padrão MPI:         *0.034047*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.297732* Ts/Tp
+ Eficiencia: 		    *7.44*%
+
+
+ Memória para a matriz:     *0.632812* Gigas
+
+ 0.652329 
+ Ordem da matriz:           *9216x9216*
+ Tempo Sequencial (Ts):     *0.328243* seg
+ Tempo MPI (Tp): 	    *1.101752* seg
+ Desvio Padrão Sequencial:  *0.000099*
+ Desvio Padrão MPI:         *0.043051*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.297928* Ts/Tp
+ Eficiencia: 		    *7.45*%
+
+
+ Memória para a matriz:     *0.781250* Gigas
+
+ 0.804640 
+ Ordem da matriz:           *10240x10240*
+ Tempo Sequencial (Ts):     *0.404875* seg
+ Tempo MPI (Tp): 	    *1.359442* seg
+ Desvio Padrão Sequencial:  *0.000157*
+ Desvio Padrão MPI:         *0.053099*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.297825* Ts/Tp
+ Eficiencia: 		    *7.45*%
+
+
+ Memória para a matriz:     *0.945312* Gigas
+
+ 0.971475 
+ Ordem da matriz:           *11264x11264*
+ Tempo Sequencial (Ts):     *0.490365* seg
+ Tempo MPI (Tp): 	    *1.642751* seg
+ Desvio Padrão Sequencial:  *0.000139*
+ Desvio Padrão MPI:         *0.064500*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298502* Ts/Tp
+ Eficiencia: 		    *7.46*%
+
+
+ Memória para a matriz:     *1.125000* Gigas
+
+ 1.156033 
+ Ordem da matriz:           *12288x12288*
+ Tempo Sequencial (Ts):     *0.582818* seg
+ Tempo MPI (Tp): 	    *1.954998* seg
+ Desvio Padrão Sequencial:  *0.000152*
+ Desvio Padrão MPI:         *0.076446*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298117* Ts/Tp
+ Eficiencia: 		    *7.45*%
+
+
+ Memória para a matriz:     *1.320312* Gigas
+
+ 1.355936 
+ Ordem da matriz:           *13312x13312*
+ Tempo Sequencial (Ts):     *0.684464* seg
+ Tempo MPI (Tp): 	    *2.292588* seg
+ Desvio Padrão Sequencial:  *0.000145*
+ Desvio Padrão MPI:         *0.090024*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298555* Ts/Tp
+ Eficiencia: 		    *7.46*%
+
+
+ Memória para a matriz:     *1.531250* Gigas
+
+ 1.567959 
+ Ordem da matriz:           *14336x14336*
+ Tempo Sequencial (Ts):     *0.793199* seg
+ Tempo MPI (Tp): 	    *2.664707* seg
+ Desvio Padrão Sequencial:  *0.000122*
+ Desvio Padrão MPI:         *0.099280*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.297669* Ts/Tp
+ Eficiencia: 		    *7.44*%
+
+
+ Memória para a matriz:     *1.757812* Gigas
+
+ 1.808040 
+ Ordem da matriz:           *15360x15360*
+ Tempo Sequencial (Ts):     *0.910503* seg
+ Tempo MPI (Tp): 	    *3.055223* seg
+ Desvio Padrão Sequencial:  *0.000189*
+ Desvio Padrão MPI:         *0.119898*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298015* Ts/Tp
+ Eficiencia: 		    *7.45*%
+
+
+ Memória para a matriz:     *2.000000* Gigas
+
+ 2.055837 
+ Ordem da matriz:           *16384x16384*
+ Tempo Sequencial (Ts):     *1.035885* seg
+ Tempo MPI (Tp): 	    *3.474517* seg
+ Desvio Padrão Sequencial:  *0.000270*
+ Desvio Padrão MPI:         *0.136317*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298138* Ts/Tp
+ Eficiencia: 		    *7.45*%
+
+
+ Memória para a matriz:     *2.257812* Gigas
+
+ 2.321748 
+ Ordem da matriz:           *17408x17408*
+ Tempo Sequencial (Ts):     *1.171115* seg
+ Tempo MPI (Tp): 	    *3.923299* seg
+ Desvio Padrão Sequencial:  *0.000216*
+ Desvio Padrão MPI:         *0.153790*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298503* Ts/Tp
+ Eficiencia: 		    *7.46*%
+
+
+ Memória para a matriz:     *2.531250* Gigas
+
+ 2.596418 
+ Ordem da matriz:           *18432x18432*
+ Tempo Sequencial (Ts):     *1.312693* seg
+ Tempo MPI (Tp): 	    *4.391635* seg
+ Desvio Padrão Sequencial:  *0.000291*
+ Desvio Padrão MPI:         *0.171975*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298908* Ts/Tp
+ Eficiencia: 		    *7.47*%
+
+
+ Memória para a matriz:     *2.820312* Gigas
+
+ 2.890861 
+ Ordem da matriz:           *19456x19456*
+ Tempo Sequencial (Ts):     *1.462474* seg
+ Tempo MPI (Tp): 	    *4.891841* seg
+ Desvio Padrão Sequencial:  *0.001076*
+ Desvio Padrão MPI:         *0.191750*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298962* Ts/Tp
+ Eficiencia: 		    *7.47*%
+
+
+ Memória para a matriz:     *3.125000* Gigas
+
+ 3.204643 
+ Ordem da matriz:           *20480x20480*
+ Tempo Sequencial (Ts):     *1.620461* seg
+ Tempo MPI (Tp): 	    *5.550581* seg
+ Desvio Padrão Sequencial:  *0.000535*
+ Desvio Padrão MPI:         *0.217449*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.291944* Ts/Tp
+ Eficiencia: 		    *7.30*%
+
+
+ Memória para a matriz:     *3.445312* Gigas
+
+ 3.529906 
+ Ordem da matriz:           *21504x21504*
+ Tempo Sequencial (Ts):     *1.784108* seg
+ Tempo MPI (Tp): 	    *5.972815* seg
+ Desvio Padrão Sequencial:  *0.000363*
+ Desvio Padrão MPI:         *0.233885*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298705* Ts/Tp
+ Eficiencia: 		    *7.47*%
+
+
+ Memória para a matriz:     *3.781250* Gigas
+
+ 3.871957 
+ Ordem da matriz:           *22528x22528*
+ Tempo Sequencial (Ts):     *1.961454* seg
+ Tempo MPI (Tp): 	    *6.553317* seg
+ Desvio Padrão Sequencial:  *0.000466*
+ Desvio Padrão MPI:         *0.256896*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.299307* Ts/Tp
+ Eficiencia: 		    *7.48*%
+
+
+ Memória para a matriz:     *4.132812* Gigas
+
+ 4.238198 
+ Ordem da matriz:           *23552x23552*
+ Tempo Sequencial (Ts):     *2.143900* seg
+ Tempo MPI (Tp): 	    *7.168896* seg
+ Desvio Padrão Sequencial:  *0.001191*
+ Desvio Padrão MPI:         *0.281273*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.299056* Ts/Tp
+ Eficiencia: 		    *7.48*%
+
+
+ Memória para a matriz:     *4.500000* Gigas
+
+ 4.609985 
+ Ordem da matriz:           *24576x24576*
+ Tempo Sequencial (Ts):     *2.333732* seg
+ Tempo MPI (Tp): 	    *7.801072* seg
+ Desvio Padrão Sequencial:  *0.000374*
+ Desvio Padrão MPI:         *0.306895*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.299155* Ts/Tp
+ Eficiencia: 		    *7.48*%
+
+
+ Memória para a matriz:     *4.882812* Gigas
+
+ 4.999541 
+ Ordem da matriz:           *25600x25600*
+ Tempo Sequencial (Ts):     *2.545139* seg
+ Tempo MPI (Tp): 	    *8.468318* seg
+ Desvio Padrão Sequencial:  *0.000460*
+ Desvio Padrão MPI:         *0.343009*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.300548* Ts/Tp
+ Eficiencia: 		    *7.51*%
+
+
+ Memória para a matriz:     *5.281250* Gigas
+
+ 5.415698 
+ Ordem da matriz:           *26624x26624*
+ Tempo Sequencial (Ts):     *2.739675* seg
+ Tempo MPI (Tp): 	    *9.160109* seg
+ Desvio Padrão Sequencial:  *0.000306*
+ Desvio Padrão MPI:         *0.359549*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.299088* Ts/Tp
+ Eficiencia: 		    *7.48*%
+
+
+ Memória para a matriz:     *5.695312* Gigas
+
+ 5.845730 
+ Ordem da matriz:           *27648x27648*
+ Tempo Sequencial (Ts):     *2.948466* seg
+ Tempo MPI (Tp): 	    *9.884179* seg
+ Desvio Padrão Sequencial:  *0.000315*
+ Desvio Padrão MPI:         *0.387005*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298302* Ts/Tp
+ Eficiencia: 		    *7.46*%
+
+
+ Memória para a matriz:     *6.125000* Gigas
+
+ 6.279329 
+ Ordem da matriz:           *28672x28672*
+ Tempo Sequencial (Ts):     *3.176705* seg
+ Tempo MPI (Tp): 	    *10.621762* seg
+ Desvio Padrão Sequencial:  *0.000396*
+ Desvio Padrão MPI:         *0.415106*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.299075* Ts/Tp
+ Eficiencia: 		    *7.48*%
+
+
+ Memória para a matriz:     *6.570312* Gigas
+
+ 6.766032 
+ Ordem da matriz:           *29696x29696*
+ Tempo Sequencial (Ts):     *3.407196* seg
+ Tempo MPI (Tp): 	    *11.421569* seg
+ Desvio Padrão Sequencial:  *0.000404*
+ Desvio Padrão MPI:         *0.449193*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298312* Ts/Tp
+ Eficiencia: 		    *7.46*%
+
+
+ Memória para a matriz:     *7.031250* Gigas
+
+ 7.223787 
+ Ordem da matriz:           *30720x30720*
+ Tempo Sequencial (Ts):     *3.641488* seg
+ Tempo MPI (Tp): 	    *12.206021* seg
+ Desvio Padrão Sequencial:  *0.000316*
+ Desvio Padrão MPI:         *0.476492*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298335* Ts/Tp
+ Eficiencia: 		    *7.46*%
+
+
+ Memória para a matriz:     *7.507812* Gigas
+
+ 7.706349 
+ Ordem da matriz:           *31744x31744*
+ Tempo Sequencial (Ts):     *3.893834* seg
+ Tempo MPI (Tp): 	    *13.026399* seg
+ Desvio Padrão Sequencial:  *0.000679*
+ Desvio Padrão MPI:         *0.510907*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.298919* Ts/Tp
+ Eficiencia: 		    *7.47*%
+
+[nova119:06971] Read 2147479552, expected 2147483648, errno = 0
+[nova119:06972] Read 2147479552, expected 2147483648, errno = 0
+[nova119:06973] Read 2147479552, expected 2147483648, errno = 0
+
+ Memória para a matriz:     *8.000000* Gigas
+
+ 44.862413 
+ Ordem da matriz:           *32768x32768*
+ Tempo Sequencial (Ts):     *4.150233* seg
+ Tempo MPI (Tp): 	    *52.464801* seg
+ Desvio Padrão Sequencial:  *0.000567*
+ Desvio Padrão MPI:         *8.061313*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.079105* Ts/Tp
+ Eficiencia: 		    *1.98*%
+
+[nova119:07017] Read 2147479552, expected 2283798528, errno = 0
+[nova119:07018] Read 2147479552, expected 2283798528, errno = 0
+[nova119:07019] Read 2147479552, expected 2283798528, errno = 0
+
+ Memória para a matriz:     *8.507812* Gigas
+
+ 51.344448 
+ Ordem da matriz:           *33792x33792*
+ Tempo Sequencial (Ts):     *4.411469* seg
+ Tempo MPI (Tp): 	    *57.243999* seg
+ Desvio Padrão Sequencial:  *0.001849*
+ Desvio Padrão MPI:         *1.860472*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.077064* Ts/Tp
+ Eficiencia: 		    *1.93*%
+
+[nova119:07056] Read 2147479552, expected 2424307712, errno = 0
+[nova119:07057] Read 2147479552, expected 2424307712, errno = 0
+[nova119:07058] Read 2147479552, expected 2424307712, errno = 0
+
+ Memória para a matriz:     *9.031250* Gigas
+
+ 67.417218 
+ Ordem da matriz:           *34816x34816*
+ Tempo Sequencial (Ts):     *4.677419* seg
+ Tempo MPI (Tp): 	    *72.834785* seg
+ Desvio Padrão Sequencial:  *0.000402*
+ Desvio Padrão MPI:         *0.379407*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.064220* Ts/Tp
+ Eficiencia: 		    *1.61*%
+
+[nova119:07098] Read 2147479552, expected 2569011200, errno = 0
+[nova119:07099] Read 2147479552, expected 2569011200, errno = 0
+[nova119:07100] Read 2147479552, expected 2569011200, errno = 0
+
+ Memória para a matriz:     *9.570312* Gigas
+
+ 94.362777 
+ Ordem da matriz:           *35840x35840*
+ Tempo Sequencial (Ts):     *5.178756* seg
+ Tempo MPI (Tp): 	    *100.887256* seg
+ Desvio Padrão Sequencial:  *0.001582*
+ Desvio Padrão MPI:         *2.911003*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.051332* Ts/Tp
+ Eficiencia: 		    *1.28*%
+
+[nova119:07145] Read 2147479552, expected 2717908992, errno = 0
+[nova119:07146] Read 2147479552, expected 2717908992, errno = 0
+[nova119:07147] Read 2147479552, expected 2717908992, errno = 0
+
+ Memória para a matriz:     *10.125000* Gigas
+
+ 103.532355 
+ Ordem da matriz:           *36864x36864*
+ Tempo Sequencial (Ts):     *5.240323* seg
+ Tempo MPI (Tp): 	    *110.059556* seg
+ Desvio Padrão Sequencial:  *0.000365*
+ Desvio Padrão MPI:         *3.512855*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.047614* Ts/Tp
+ Eficiencia: 		    *1.19*%
+
+[nova119:07186] Read 2147479552, expected 2871001088, errno = 0
+[nova119:07187] Read 2147479552, expected 2871001088, errno = 0
+[nova119:07188] Read 2147479552, expected 2871001088, errno = 0
+
+ Memória para a matriz:     *10.695312* Gigas
+
+ 125.965816 
+ Ordem da matriz:           *37888x37888*
+ Tempo Sequencial (Ts):     *5.545729* seg
+ Tempo MPI (Tp): 	    *134.339188* seg
+ Desvio Padrão Sequencial:  *0.000470*
+ Desvio Padrão MPI:         *11.218767*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.041282* Ts/Tp
+ Eficiencia: 		    *1.03*%
+
+[nova119:07239] Read 2147479552, expected 3028287488, errno = 0
+[nova119:07240] Read 2147479552, expected 3028287488, errno = 0
+[nova119:07241] Read 2147479552, expected 3028287488, errno = 0
+
+ Memória para a matriz:     *11.281250* Gigas
+
+ 136.019315 
+ Ordem da matriz:           *38912x38912*
+ Tempo Sequencial (Ts):     *5.842051* seg
+ Tempo MPI (Tp): 	    *146.541187* seg
+ Desvio Padrão Sequencial:  *0.000415*
+ Desvio Padrão MPI:         *19.362403*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.039866* Ts/Tp
+ Eficiencia: 		    *1.00*%
+
+[nova119:07288] Read 2147479552, expected 3189768192, errno = 0
+[nova119:07289] Read 2147479552, expected 3189768192, errno = 0
+[nova119:07290] Read 2147479552, expected 3189768192, errno = 0
+
+ Memória para a matriz:     *11.882812* Gigas
+
+ 167.508596 
+ Ordem da matriz:           *39936x39936*
+ Tempo Sequencial (Ts):     *6.161678* seg
+ Tempo MPI (Tp): 	    *180.395754* seg
+ Desvio Padrão Sequencial:  *0.001725*
+ Desvio Padrão MPI:         *27.205762*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.034156* Ts/Tp
+ Eficiencia: 		    *0.85*%
+
+[nova119:07346] Read 2147479552, expected 3355443200, errno = 0
+[nova119:07347] Read 2147479552, expected 3355443200, errno = 0
+[nova119:07348] Read 2147479552, expected 3355443200, errno = 0
+
+ Memória para a matriz:     *12.500000* Gigas
+
+ 193.122177 
+ Ordem da matriz:           *40960x40960*
+ Tempo Sequencial (Ts):     *6.481697* seg
+ Tempo MPI (Tp): 	    *207.199266* seg
+ Desvio Padrão Sequencial:  *0.001876*
+ Desvio Padrão MPI:         *29.967434*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.031282* Ts/Tp
+ Eficiencia: 		    *0.78*%
+
+[nova119:07396] Read 2147479552, expected 3525312512, errno = 0
+[nova119:07397] Read 2147479552, expected 3525312512, errno = 0
+[nova119:07398] Read 2147479552, expected 3525312512, errno = 0
+
+ Memória para a matriz:     *13.132812* Gigas
+
+ 251.390188 
+ Ordem da matriz:           *41984x41984*
+ Tempo Sequencial (Ts):     *6.810694* seg
+ Tempo MPI (Tp): 	    *267.546960* seg
+ Desvio Padrão Sequencial:  *0.001661*
+ Desvio Padrão MPI:         *37.192064*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.025456* Ts/Tp
+ Eficiencia: 		    *0.64*%
+
+[nova119:07454] Read 2147479552, expected 3699376128, errno = 0
+[nova119:07455] Read 2147479552, expected 3699376128, errno = 0
+[nova119:07456] Read 2147479552, expected 3699376128, errno = 0
+
+ Memória para a matriz:     *13.781250* Gigas
+
+ 686.925604 
+ Ordem da matriz:           *43008x43008*
+ Tempo Sequencial (Ts):     *7.145497* seg
+ Tempo MPI (Tp): 	    *704.862943* seg
+ Desvio Padrão Sequencial:  *0.001741*
+ Desvio Padrão MPI:         *41.447560*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.010137* Ts/Tp
+ Eficiencia: 		    *0.25*%
+
+[nova119:07528] Read 2147479552, expected 3877634048, errno = 0
+[nova119:07529] Read 2147479552, expected 3877634048, errno = 0
+[nova119:07530] Read 2147479552, expected 3877634048, errno = 0
+
+ Memória para a matriz:     *14.445312* Gigas
+
+ 858.103414 
+ Ordem da matriz:           *44032x44032*
+ Tempo Sequencial (Ts):     *7.491047* seg
+ Tempo MPI (Tp): 	    *878.014162* seg
+ Desvio Padrão Sequencial:  *0.002017*
+ Desvio Padrão MPI:         *48.537188*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.008532* Ts/Tp
+ Eficiencia: 		    *0.21*%
+
+--------------------
+8 PROCESSOS
+
+ Memória para a matriz:     *0.007812* Gigas
+
+ 0.008210 
+ Ordem da matriz:           *1024x1024*
+ Tempo Sequencial (Ts):     *0.004073* seg
+ Tempo MPI (Tp): 	    *0.012045* seg
+ Desvio Padrão Sequencial:  *0.000027*
+ Desvio Padrão MPI:         *0.000078*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.338176* Ts/Tp
+ Eficiencia: 		    *4.23*%
+
+
+ Memória para a matriz:     *0.031250* Gigas
+
+ 0.041060 
+ Ordem da matriz:           *2048x2048*
+ Tempo Sequencial (Ts):     *0.016246* seg
+ Tempo MPI (Tp): 	    *0.087508* seg
+ Desvio Padrão Sequencial:  *0.000057*
+ Desvio Padrão MPI:         *0.008080*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.185653* Ts/Tp
+ Eficiencia: 		    *2.32*%
+
+
+ Memória para a matriz:     *0.070312* Gigas
+
+ 0.105099 
+ Ordem da matriz:           *3072x3072*
+ Tempo Sequencial (Ts):     *0.036490* seg
+ Tempo MPI (Tp): 	    *0.194086* seg
+ Desvio Padrão Sequencial:  *0.000062*
+ Desvio Padrão MPI:         *0.019606*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.188011* Ts/Tp
+ Eficiencia: 		    *2.35*%
+
+
+ Memória para a matriz:     *0.125000* Gigas
+
+ 0.186586 
+ Ordem da matriz:           *4096x4096*
+ Tempo Sequencial (Ts):     *0.064821* seg
+ Tempo MPI (Tp): 	    *0.341349* seg
+ Desvio Padrão Sequencial:  *0.000059*
+ Desvio Padrão MPI:         *0.034476*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.189896* Ts/Tp
+ Eficiencia: 		    *2.37*%
+
+
+ Memória para a matriz:     *0.195312* Gigas
+
+ 0.289827 
+ Ordem da matriz:           *5120x5120*
+ Tempo Sequencial (Ts):     *0.101491* seg
+ Tempo MPI (Tp): 	    *0.530880* seg
+ Desvio Padrão Sequencial:  *0.000126*
+ Desvio Padrão MPI:         *0.054067*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191175* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *0.281250* Gigas
+
+ 0.417436 
+ Ordem da matriz:           *6144x6144*
+ Tempo Sequencial (Ts):     *0.146041* seg
+ Tempo MPI (Tp): 	    *0.763612* seg
+ Desvio Padrão Sequencial:  *0.000078*
+ Desvio Padrão MPI:         *0.077769*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191251* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *0.382812* Gigas
+
+ 0.567561 
+ Ordem da matriz:           *7168x7168*
+ Tempo Sequencial (Ts):     *0.198799* seg
+ Tempo MPI (Tp): 	    *1.037118* seg
+ Desvio Padrão Sequencial:  *0.000168*
+ Desvio Padrão MPI:         *0.105764*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191684* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *0.500000* Gigas
+
+ 0.739174 
+ Ordem da matriz:           *8192x8192*
+ Tempo Sequencial (Ts):     *0.259690* seg
+ Tempo MPI (Tp): 	    *1.361902* seg
+ Desvio Padrão Sequencial:  *0.000101*
+ Desvio Padrão MPI:         *0.139045*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.190682* Ts/Tp
+ Eficiencia: 		    *2.38*%
+
+
+ Memória para a matriz:     *0.632812* Gigas
+
+ 0.934961 
+ Ordem da matriz:           *9216x9216*
+ Tempo Sequencial (Ts):     *0.328507* seg
+ Tempo MPI (Tp): 	    *1.713958* seg
+ Desvio Padrão Sequencial:  *0.000093*
+ Desvio Padrão MPI:         *0.175349*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191666* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *0.781250* Gigas
+
+ 1.154495 
+ Ordem da matriz:           *10240x10240*
+ Tempo Sequencial (Ts):     *0.404866* seg
+ Tempo MPI (Tp): 	    *2.119768* seg
+ Desvio Padrão Sequencial:  *0.000167*
+ Desvio Padrão MPI:         *0.217061*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.190995* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *0.945312* Gigas
+
+ 1.393283 
+ Ordem da matriz:           *11264x11264*
+ Tempo Sequencial (Ts):     *0.490588* seg
+ Tempo MPI (Tp): 	    *2.556313* seg
+ Desvio Padrão Sequencial:  *0.000143*
+ Desvio Padrão MPI:         *0.262257*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191912* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *1.125000* Gigas
+
+ 1.658621 
+ Ordem da matriz:           *12288x12288*
+ Tempo Sequencial (Ts):     *0.582836* seg
+ Tempo MPI (Tp): 	    *3.051955* seg
+ Desvio Padrão Sequencial:  *0.000118*
+ Desvio Padrão MPI:         *0.312457*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.190971* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *1.320312* Gigas
+
+ 1.945307 
+ Ordem da matriz:           *13312x13312*
+ Tempo Sequencial (Ts):     *0.685254* seg
+ Tempo MPI (Tp): 	    *3.572696* seg
+ Desvio Padrão Sequencial:  *0.000174*
+ Desvio Padrão MPI:         *0.365839*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191803* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *1.531250* Gigas
+
+ 2.268767 
+ Ordem da matriz:           *14336x14336*
+ Tempo Sequencial (Ts):     *0.793045* seg
+ Tempo MPI (Tp): 	    *4.165118* seg
+ Desvio Padrão Sequencial:  *0.000156*
+ Desvio Padrão MPI:         *0.424448*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.190402* Ts/Tp
+ Eficiencia: 		    *2.38*%
+
+
+ Memória para a matriz:     *1.757812* Gigas
+
+ 2.585697 
+ Ordem da matriz:           *15360x15360*
+ Tempo Sequencial (Ts):     *0.909762* seg
+ Tempo MPI (Tp): 	    *4.757580* seg
+ Desvio Padrão Sequencial:  *0.000253*
+ Desvio Padrão MPI:         *0.486271*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191224* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *2.000000* Gigas
+
+ 2.949002 
+ Ordem da matriz:           *16384x16384*
+ Tempo Sequencial (Ts):     *1.037782* seg
+ Tempo MPI (Tp): 	    *5.409732* seg
+ Desvio Padrão Sequencial:  *0.000350*
+ Desvio Padrão MPI:         *0.555101*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191836* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *2.257812* Gigas
+
+ 3.314937 
+ Ordem da matriz:           *17408x17408*
+ Tempo Sequencial (Ts):     *1.171590* seg
+ Tempo MPI (Tp): 	    *6.121170* seg
+ Desvio Padrão Sequencial:  *0.000338*
+ Desvio Padrão MPI:         *0.623534*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191400* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *2.531250* Gigas
+
+ 3.726918 
+ Ordem da matriz:           *18432x18432*
+ Tempo Sequencial (Ts):     *1.311503* seg
+ Tempo MPI (Tp): 	    *6.850745* seg
+ Desvio Padrão Sequencial:  *0.000422*
+ Desvio Padrão MPI:         *0.704246*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191439* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *2.820312* Gigas
+
+ 4.151397 
+ Ordem da matriz:           *19456x19456*
+ Tempo Sequencial (Ts):     *1.460521* seg
+ Tempo MPI (Tp): 	    *7.641356* seg
+ Desvio Padrão Sequencial:  *0.000425*
+ Desvio Padrão MPI:         *0.783037*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191134* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *3.125000* Gigas
+
+ 4.621321 
+ Ordem da matriz:           *20480x20480*
+ Tempo Sequencial (Ts):     *1.622319* seg
+ Tempo MPI (Tp): 	    *8.479901* seg
+ Desvio Padrão Sequencial:  *0.000558*
+ Desvio Padrão MPI:         *0.867771*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191313* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *3.445312* Gigas
+
+ 5.073853 
+ Ordem da matriz:           *21504x21504*
+ Tempo Sequencial (Ts):     *1.784945* seg
+ Tempo MPI (Tp): 	    *9.340307* seg
+ Desvio Padrão Sequencial:  *0.000381*
+ Desvio Padrão MPI:         *0.957640*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191101* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *3.781250* Gigas
+
+ 5.563924 
+ Ordem da matriz:           *22528x22528*
+ Tempo Sequencial (Ts):     *1.962713* seg
+ Tempo MPI (Tp): 	    *10.216880* seg
+ Desvio Padrão Sequencial:  *0.001509*
+ Desvio Padrão MPI:         *1.050194*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.192105* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *4.132812* Gigas
+
+ 6.083343 
+ Ordem da matriz:           *23552x23552*
+ Tempo Sequencial (Ts):     *2.146090* seg
+ Tempo MPI (Tp): 	    *11.170671* seg
+ Desvio Padrão Sequencial:  *0.001691*
+ Desvio Padrão MPI:         *1.146887*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.192118* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *4.500000* Gigas
+
+ 6.628216 
+ Ordem da matriz:           *24576x24576*
+ Tempo Sequencial (Ts):     *2.336493* seg
+ Tempo MPI (Tp): 	    *12.166234* seg
+ Desvio Padrão Sequencial:  *0.000532*
+ Desvio Padrão MPI:         *1.249457*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.192047* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *4.882812* Gigas
+
+ 7.191755 
+ Ordem da matriz:           *25600x25600*
+ Tempo Sequencial (Ts):     *2.535094* seg
+ Tempo MPI (Tp): 	    *13.202765* seg
+ Desvio Padrão Sequencial:  *0.000479*
+ Desvio Padrão MPI:         *1.355109*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.192012* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *5.281250* Gigas
+
+ 7.782490 
+ Ordem da matriz:           *26624x26624*
+ Tempo Sequencial (Ts):     *2.734782* seg
+ Tempo MPI (Tp): 	    *14.361813* seg
+ Desvio Padrão Sequencial:  *0.000351*
+ Desvio Padrão MPI:         *1.476679*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.190420* Ts/Tp
+ Eficiencia: 		    *2.38*%
+
+
+ Memória para a matriz:     *5.695312* Gigas
+
+ 8.417007 
+ Ordem da matriz:           *27648x27648*
+ Tempo Sequencial (Ts):     *2.955227* seg
+ Tempo MPI (Tp): 	    *15.431332* seg
+ Desvio Padrão Sequencial:  *0.000262*
+ Desvio Padrão MPI:         *1.581789*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191508* Ts/Tp
+ Eficiencia: 		    *2.39*%
+
+
+ Memória para a matriz:     *6.125000* Gigas
+
+ 9.015684 
+ Ordem da matriz:           *28672x28672*
+ Tempo Sequencial (Ts):     *3.181035* seg
+ Tempo MPI (Tp): 	    *16.553376* seg
+ Desvio Padrão Sequencial:  *0.001150*
+ Desvio Padrão MPI:         *1.699979*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.192168* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *6.570312* Gigas
+
+ 9.670119 
+ Ordem da matriz:           *29696x29696*
+ Tempo Sequencial (Ts):     *3.407481* seg
+ Tempo MPI (Tp): 	    *17.759636* seg
+ Desvio Padrão Sequencial:  *0.000359*
+ Desvio Padrão MPI:         *1.819763*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191867* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *7.031250* Gigas
+
+ 10.353697 
+ Ordem da matriz:           *30720x30720*
+ Tempo Sequencial (Ts):     *3.649137* seg
+ Tempo MPI (Tp): 	    *19.021587* seg
+ Desvio Padrão Sequencial:  *0.000401*
+ Desvio Padrão MPI:         *1.950520*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.191842* Ts/Tp
+ Eficiencia: 		    *2.40*%
+
+
+ Memória para a matriz:     *7.507812* Gigas
+
+ 12.218494 
+ Ordem da matriz:           *31744x31744*
+ Tempo Sequencial (Ts):     *3.895768* seg
+ Tempo MPI (Tp): 	    *22.529674* seg
+ Desvio Padrão Sequencial:  *0.000429*
+ Desvio Padrão MPI:         *3.630870*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.172917* Ts/Tp
+ Eficiencia: 		    *2.16*%
+
+
+ Memória para a matriz:     *8.000000* Gigas
+
+ 39.699849 
+ Ordem da matriz:           *32768x32768*
+ Tempo Sequencial (Ts):     *4.146594* seg
+ Tempo MPI (Tp): 	    *53.227656* seg
+ Desvio Padrão Sequencial:  *0.008024*
+ Desvio Padrão MPI:         *9.227147*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.077903* Ts/Tp
+ Eficiencia: 		    *0.97*%
+
+
+ Memória para a matriz:     *8.507812* Gigas
+
+ 67.768506 
+ Ordem da matriz:           *33792x33792*
+ Tempo Sequencial (Ts):     *4.414416* seg
+ Tempo MPI (Tp): 	    *86.607026* seg
+ Desvio Padrão Sequencial:  *0.000444*
+ Desvio Padrão MPI:         *16.427299*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.050971* Ts/Tp
+ Eficiencia: 		    *0.64*%
+
+
+ Memória para a matriz:     *9.031250* Gigas
+
+ 78.157651 
+ Ordem da matriz:           *34816x34816*
+ Tempo Sequencial (Ts):     *4.675670* seg
+ Tempo MPI (Tp): 	    *87.138837* seg
+ Desvio Padrão Sequencial:  *0.000335*
+ Desvio Padrão MPI:         *8.538738*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.053658* Ts/Tp
+ Eficiencia: 		    *0.67*%
+
+
+ Memória para a matriz:     *9.570312* Gigas
+
+ 126.815266 
+ Ordem da matriz:           *35840x35840*
+ Tempo Sequencial (Ts):     *4.970825* seg
+ Tempo MPI (Tp): 	    *154.716950* seg
+ Desvio Padrão Sequencial:  *0.004184*
+ Desvio Padrão MPI:         *31.698183*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.032129* Ts/Tp
+ Eficiencia: 		    *0.40*%
+
+
+ Memória para a matriz:     *10.125000* Gigas
+
+ 134.560557 
+ Ordem da matriz:           *36864x36864*
+ Tempo Sequencial (Ts):     *5.247322* seg
+ Tempo MPI (Tp): 	    *145.096144* seg
+ Desvio Padrão Sequencial:  *0.007515*
+ Desvio Padrão MPI:         *17.437787*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.036164* Ts/Tp
+ Eficiencia: 		    *0.45*%
+
+
+ Memória para a matriz:     *10.695312* Gigas
+
+ 129.795236 
+ Ordem da matriz:           *37888x37888*
+ Tempo Sequencial (Ts):     *5.552440* seg
+ Tempo MPI (Tp): 	    *137.890149* seg
+ Desvio Padrão Sequencial:  *0.006656*
+ Desvio Padrão MPI:         *5.940570*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.040267* Ts/Tp
+ Eficiencia: 		    *0.50*%
+
+
+ Memória para a matriz:     *11.281250* Gigas
+
+ 138.154294 
+ Ordem da matriz:           *38912x38912*
+ Tempo Sequencial (Ts):     *5.856774* seg
+ Tempo MPI (Tp): 	    *146.411303* seg
+ Desvio Padrão Sequencial:  *0.000489*
+ Desvio Padrão MPI:         *5.806058*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.040002* Ts/Tp
+ Eficiencia: 		    *0.50*%
+
+
+ Memória para a matriz:     *11.882812* Gigas
+
+ 159.884391 
+ Ordem da matriz:           *39936x39936*
+ Tempo Sequencial (Ts):     *6.169464* seg
+ Tempo MPI (Tp): 	    *169.854162* seg
+ Desvio Padrão Sequencial:  *0.002487*
+ Desvio Padrão MPI:         *12.881368*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.036322* Ts/Tp
+ Eficiencia: 		    *0.45*%
+
+
+ Memória para a matriz:     *12.500000* Gigas
+
+ 194.054563 
+ Ordem da matriz:           *40960x40960*
+ Tempo Sequencial (Ts):     *6.482736* seg
+ Tempo MPI (Tp): 	    *205.443049* seg
+ Desvio Padrão Sequencial:  *0.001322*
+ Desvio Padrão MPI:         *17.339594*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.031555* Ts/Tp
+ Eficiencia: 		    *0.39*%
+
+
+ Memória para a matriz:     *13.132812* Gigas
+
+ 259.757340 
+ Ordem da matriz:           *41984x41984*
+ Tempo Sequencial (Ts):     *6.821687* seg
+ Tempo MPI (Tp): 	    *272.204709* seg
+ Desvio Padrão Sequencial:  *0.004813*
+ Desvio Padrão MPI:         *19.655203*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.025061* Ts/Tp
+ Eficiencia: 		    *0.31*%
+
+
+ Memória para a matriz:     *13.781250* Gigas
+
+ 310.683754 
+ Ordem da matriz:           *43008x43008*
+ Tempo Sequencial (Ts):     *7.156754* seg
+ Tempo MPI (Tp): 	    *322.556629* seg
+ Desvio Padrão Sequencial:  *0.007119*
+ Desvio Padrão MPI:         *14.839701*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.022188* Ts/Tp
+ Eficiencia: 		    *0.28*%
+
+
+ Memória para a matriz:     *14.445312* Gigas
+
+ 847.280953 
+ Ordem da matriz:           *44032x44032*
+ Tempo Sequencial (Ts):     *7.495864* seg
+ Tempo MPI (Tp): 	    *861.739534* seg
+ Desvio Padrão Sequencial:  *0.000434*
+ Desvio Padrão MPI:         *22.406407*
+
+ Diferenca de valor máxima: *0.000000*
+
+ Speedup: 		    *0.008699* Ts/Tp
+ Eficiencia: 		    *0.11*%
+
+--------------------
